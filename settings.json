@@ -1,0 +1,172 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+	// -- Bars
+	"project_panel": {
+		"auto_fold_dirs": false,
+		"hide_root": false,
+	},
+	"show_completion_documentation": false,
+	"title_bar": {
+		"show_sign_in": false,
+	},
+
+	"tab_bar": {
+		"show": true,
+		"show_tab_bar_buttons": false,
+	},
+	"tabs": {
+		"file_icons": true,
+	},
+
+	"toolbar": {
+		"quick_actions": false,
+		"breadcrumbs": false,
+	},
+
+	// -- Completion
+	"disable_ai": true,
+	"features": {
+		"edit_prediction_provider": "copilot",
+	},
+	"show_completions_on_input": false,
+	"show_edit_predictions": true,
+	"edit_predictions": {
+		"mode": "subtle",
+		// "disabled_globs": ["**/*.md"]
+	},
+	"agent": {
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-5-mini",
+		},
+		"model_parameters": [],
+		"enabled": true,
+		"enable_feedback": false,
+	},
+	"hover_popover_delay": 5000,
+
+	// -- Editor
+	"tab_size": 2,
+	"hard_tabs": true,
+	"inlay_hints": {
+		"show_type_hints": true,
+		"enabled": false,
+	},
+	"indent_guides": {
+		"enabled": false,
+	},
+	"extend_comment_on_newline": false,
+	"inline_code_actions": false,
+
+	// -- Files
+	"file_types": {
+		"Markdown": ["aip"],
+	},
+	"file_scan_inclusions": [
+		//
+		".aipack/*",
+		".notes/*",
+	],
+	"languages": {
+		"Rust": {
+			"extend_comment_on_newline": false,
+		},
+		"Lua": {
+			"show_edit_predictions": true,
+		},
+		"Markdown": {
+			"show_edit_predictions": false,
+			"hard_tabs": false,
+			"format_on_save": "off",
+		},
+		"YAML": {
+			"show_edit_predictions": false,
+			"hard_tabs": false,
+			"format_on_save": "off",
+		},
+	},
+
+	// -- Git
+	"git": {
+		"inline_blame": {
+			"enabled": false,
+		},
+	},
+
+	// -- Theme
+	"icon_theme": "Material Icon Theme",
+	// https://zed-themes.com/themes/vscode-dark-modern?name=VSCode%20Dark%20Modern
+	"theme": "VSCode Dark Modern",
+
+	"buffer_font_family": "Menlo",
+	"ui_font_size": 18,
+	"buffer_font_size": 18,
+
+	"terminal": {
+		"minimum_contrast": 18.0,
+		"shell": "system",
+		"font_size": 16.0,
+		"font_family": "Source Code Pro",
+	},
+	"theme_overrides": {
+		// "VSCode Dark Modern"
+		"VSCode Dark Modern": {
+			"scrollbar.thumb.background": "#1a1a1a",
+			"tab_bar.background": "#0f0f0f",
+			"tab.active_background": "#202020",
+			"tab.inactive_background": "#030303",
+			"editor.gutter.background": "#000",
+			"editor.background": "#000",
+			"background": "#000",
+
+			// when keyword selected for the other keywords
+			"editor.document_highlight.read_background": "#222222",
+
+			// "editor.foreground": "#000",
+			"terminal.background": "#000",
+			"title_bar.background": "#000",
+			"panel.background": "#0a0a0a",
+
+			"syntax": {
+				"title": { "color": "#6699ff" },
+				// "variable": { "color": "#ff0000" },
+				"variable.mutable": { "color": "#00ff00" }, // do not work
+				// Note: if comment or comment.doc italic, then a little cursive
+				"tag": { "color": "#ff00ff" },
+				"attribute": { "color": "#00ffff" },
+				"keyword": { "color": "#569CD6" },
+			},
+
+			"editor.active_line.background": "#ffffff00", // disable this selc background line
+
+			"text": "#fff",
+			"text.muted": "#ddd",
+			// "created": "#44aa4499", // (ugly on new file)
+			// "modified": "#6699ff",
+			"ignored": "#656565", // for the git ingore file name in the file explorer
+			"deleted": "#ff0000",
+			"hidden": "#999",
+			"error": "#ff0000",
+
+			"hint": "#ffffff6f",
+			// "hint.background": "#0000ff", // seems to not have any effect
+			// "hint.border": "#00ff00"      // seems to not have any effect
+		},
+	},
+
+	// -- Other
+	"ssh_connections": [
+		{
+			"host": "b",
+			"args": [],
+			"projects": [],
+		},
+	],
+}

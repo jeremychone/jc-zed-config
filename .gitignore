@@ -1,0 +1,92 @@
+# -- Base
+.*
+!.gitignore
+!.github
+
+_*
+!_base/
+!_init/
+# '_' in src dir, ok.
+!**/src/**/_*
+!_init/**/_*
+
+*.lock
+*.lockb
+*.log
+
+# -- For Zed
+*.mdb
+*_db*
+
+# -- Aipack
+# Only allow .aipack/custom and .aipack/config.toml
+# Note: Here the starting `/` will just include the top .aipack.
+#       Remove the starting `/` to include all .aipack/custom even if their in a sub dir
+*.aipack
+!.aipack/
+.aipack/*
+!.aipack/pack/
+.aipack/pack/*
+!.aipack/pack/custom/
+.aipack/pack/custom/*
+!.aipack/pack/custom/dev/
+src/**/*.aip
+
+# -- Aipack for test
+!/tests-data/sandbox-01/.aipack/
+!/tests-data/sandbox-01/.aipack/*
+!/tests-data/sandbox-01/.aipack/config.toml
+/tests-data/sandbox-01/.aipack/.*
+
+!/tests-data/.aipack-base
+
+# -- Rust
+target/
+# !Cargo.lock # commented by default
+!.cargo/
+
+# -- Safety net
+dist/
+out/
+*.exe
+
+# Data Files
+*.db3
+*.parquet
+*.map
+*.zip
+*.gz
+*.tar
+*.tgz
+*.vsix
+
+# Videos
+*.mov
+*.mp4
+*.webm
+*.ogg
+*.avi
+
+# Images
+*.icns
+*.ico
+*.jpeg
+*.jpg
+*.png
+*.bmp
+
+# -- Nodejs
+node_modules/
+!.mocharc.yaml
+report.*.json
+
+# -- Python
+__pycache__/
+
+
+# -- others
+# Allows .env (make sure only dev info)
+# !.env # Commented by default
+
+# Allow vscode
+# !.vscode # Commented by default

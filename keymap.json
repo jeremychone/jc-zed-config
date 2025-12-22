@@ -1,0 +1,121 @@
+[
+	{
+		"bindings": {
+			"cmd-r": ["workspace::SendKeystrokes", "ctrl-` r"],
+		},
+	},
+
+	// -- Surround
+	// <>
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-alt-,": ["workspace::SendKeystrokes", "cmd-x < cmd-v >"],
+		},
+	},
+	// ()
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-alt-9": ["workspace::SendKeystrokes", "cmd-x ( cmd-v )"],
+		},
+	},
+
+	// -- Multiple to add ; end of line
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-;": "editor::MoveToEndOfLine",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-;": ["workspace::SendKeystrokes", "cmd-; ;"],
+		},
+	},
+
+	// Delete line
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-backspace": "editor::DeleteLine",
+		},
+	},
+
+	// -- cmd+shift+g - Git panel Override
+	{
+		"context": "Global",
+		"bindings": {
+			"cmd-shift-g": "git_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-shift-g": "git_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-shift-g": "git_panel::ToggleFocus",
+		},
+	},
+
+	// --
+
+	{
+		"bindings": {
+			"ctrl-cmd-right": "pane::SplitAndMoveRight",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-[": "editor::MoveLineDown",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-]": "editor::MoveLineUp",
+		},
+	},
+	{
+		"context": "!ContextEditor > (Editor && mode == full)",
+		"bindings": {
+			"cmd-u": "editor::ToggleInlayHints",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-alt-]": "editor::Indent",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-alt-[": "editor::Outdent",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"alt-cmd-r": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"alt-g": "search::SelectNextMatch",
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"alt-shift-g": "search::SelectPreviousMatch",
+		},
+	},
+]

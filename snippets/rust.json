@@ -1,0 +1,304 @@
+{
+	// -- Rust10x
+
+	// -- JC ZED XP
+	"jc_format": {
+		"prefix": "jc_format",
+		"body": ["format!(${1:HELLO})"],
+		"description": "format!",
+	},
+	"jc_trace_debug": {
+		"prefix": "jc_trace_debug",
+		"body": ["tracing::debug!(\"->> {${1}}\");"],
+		"description": "format!",
+	},
+
+	// -- VSCode
+
+	"pair_lgt": {
+		"prefix": "<",
+		"body": ["<$1$TM_SELECTED_TEXT>"],
+		"description": "<> pair",
+	},
+	"pair_bars": {
+		"prefix": "|",
+		"body": ["|$1|"],
+		"description": "|| pair",
+	},
+	"pair_braces": {
+		"prefix": "{",
+		"body": ["{$1}"],
+		"description": "{} pair",
+	},
+	"warning-unused": {
+		"prefix": "unused",
+		"body": ["#${1}[allow(unused)]"],
+		"description": "allow unused",
+	},
+	"ctest": {
+		"prefix": "ctest",
+		"body": ["#[cfg(test)]", "#[path = \"../_tests/test_${1}\"]", "mod tests;"],
+	},
+	"use_format": {
+		"prefix": "uf",
+		"body": ["use std::format as f;"],
+		"description": "use create prelude",
+	},
+
+	// -- Module
+	"use_crate_prelude": {
+		"prefix": "up",
+		"body": ["use crate::prelude::*;"],
+		"description": "use create prelude",
+	},
+
+	// -- Default
+	"default": {
+		"prefix": "default",
+		"body": ["${1:StructName}::default()"],
+		"description": "default",
+	},
+
+	"_default": {
+		"prefix": "..",
+		"body": ["..Default::default()"],
+		"description": "default",
+	},
+
+	"impl_default": {
+		"prefix": "idefault",
+		"body": [
+			"impl Default for ${1:name} {",
+			"\tfn default() -> Self {",
+			"\t\tSelf {",
+			"\t\t\t$2",
+			"\t\t}",
+			"\t}",
+			"}",
+		],
+		"description": "impl Default implementation",
+	},
+
+	"impl_display": {
+		"prefix": "idisplay",
+		"body": [
+			"impl std::fmt::Display for ${1:Type} {",
+			"\tfn fmt(&self, fmt: &mut std::fmt::Formatter) -> core::result::Result<(), std::fmt::Error> {",
+			"\t\twrite!(fmt, \"{self:?}\")${2}",
+			"\t}",
+			"}",
+		],
+		"description": "impl Display just simple debug show",
+	},
+
+	// -- JC Impl
+	"impl_trait": {
+		"prefix": "itrait",
+		"body": ["impl ${1:Trait} for ${2:Type} {", "\t$3", "}"],
+		"description": "implement trait",
+	},
+	"impl_e_from": {
+		"prefix": "iefrom",
+		"body": [
+			"impl From<${1:module}::Error> for Error {",
+			"\tfn from(val: ${1}::Error) -> Self {",
+			"\t\tSelf::${2:Variant}(val)",
+			"\t}",
+			"}",
+		],
+		"description": "impl From implementation",
+	},
+
+	// -- JC Constructs
+	"todo": {
+		"prefix": "t",
+		"body": ["todo!()"],
+		"description": "todo!()",
+	},
+
+	"struct": {
+		"prefix": "st",
+		"body": ["${1}struct ${2:TypeName} {", "\t${3}", "}"],
+		"description": "struct",
+	},
+	// If put prefix: fn, it comes first, but the default fn get selected even if second place?
+
+	"list_str": {
+		"prefix": "#",
+		"body": ["r#\"$1\"#"],
+		"description": "list_str",
+	},
+	"box": {
+		"prefix": "box",
+		"body": ["Box::new($1)"],
+		"description": "box new",
+	},
+	"map": {
+		"prefix": ".map",
+		"body": [".map(|${1:v}| $2)"],
+		"description": "map",
+	},
+	"map_err": {
+		"prefix": ".map_err",
+		"body": [".map_err(${1:Error::custom_from_err})?"],
+		"description": "map_err",
+	},
+	"map_err_str": {
+		"prefix": ".map_err_str",
+		"body": [".map_err(|_| \"${1:Some Message}\")?"],
+		"description": "map_err_string",
+	},
+	"map_err_format": {
+		"prefix": ".map_err_format",
+		"body": [".map_err(|err| format!(\"${1}{err}\"))?"],
+		"description": "map_err_string",
+	},
+	"impl_into_string": {
+		"prefix": "is",
+		"body": ["impl Into<String>"],
+		"description": "impl Into<String>",
+	},
+	"impl_into": {
+		"prefix": "ii",
+		"body": ["impl Into<$1>"],
+		"description": "impl Into<>",
+	},
+
+	// -- Collec
+	"collect_vect": {
+		"prefix": ".cv",
+		"body": [".collect::<Vec<_>>();"],
+		"description": "Collect Vec",
+	},
+
+	// -- JC Derive
+	"derive": {
+		"prefix": "dr",
+		"body": ["#[derive(${1})]"],
+		"description": "#[derive(…)]",
+	},
+	"derive_debug": {
+		"prefix": "dd",
+		"body": ["#[derive(Debug${1})]"],
+		"description": "Derive Debug",
+	},
+	"derive_clone": {
+		"prefix": "dc",
+		"body": ["#[derive(Clone${1})]"],
+		"description": "Derive Clone",
+	},
+
+	// -- JC Lang
+	"for": {
+		"prefix": "for",
+		"body": ["for ${1:elem} in ${2:iter} {", "\t$0", "}"],
+		"description": "Insert for loop",
+	},
+	"if": {
+		"prefix": "if ",
+		"body": ["if ${1:pattern} {", "\t$TM_SELECTED_TEXT", "}"],
+		"description": "Insert if",
+	},
+	"if let": {
+		"prefix": "if let",
+		"body": ["if let ${1:pattern} = ${2:value} {", "\t$3", "}"],
+		"description": "Insert if to match a specific pattern, useful for enum variants e.g. `Some(inner)`",
+	},
+
+	"spawn": {
+		"prefix": ["thread_spawn", "spawn"],
+		"body": ["std::thread::spawn(move || {", "\t$1", "})"],
+		"description": "Wrap code in thread::spawn",
+	},
+
+	// -- JC - Ratatui
+	"tui-layout": {
+		"prefix": "tui-layout",
+		"body": [
+			"let [header_a, _, body_a] = Layout::default()",
+			"\t.direction(Direction::Vertical)",
+			"\t.constraints(vec![",
+			"\t\tConstraint::Length(3), // header",
+			"\t\tConstraint::Length(1), // gap",
+			"\t\tConstraint::Fill(1),   // Boday",
+			"\t])",
+			"\t.areas(area);",
+		],
+		"description": "TUI layout with ratatui",
+	},
+
+	// -- JC - Cond Compile
+	"cfg": {
+		"prefix": "cfg",
+		"body": ["#[cfg(${1})]"],
+		"description": "#[cfg(…)]",
+	},
+
+	"test": {
+		"prefix": "test",
+		"body": [
+			"#[test]",
+			"fn ${1:name}() -> Result<(), Box<dyn Error>>  {",
+			"  ${2:unimplemented!();}",
+			"  Ok(())",
+			"}",
+		],
+		"description": "#[test]",
+	},
+
+	// -- Comment
+	"comment-module": {
+		"prefix": "mm",
+		"body": [
+			"////////////////////////////////////",
+			"// ${1:comment}",
+			"////",
+			"",
+		],
+		"description": "Module Comment",
+	},
+
+	// -- JC j-Templates
+	"jmacro_rules": {
+		"prefix": "jmacro_rules",
+		"body": [
+			"// - `nm` e.g., ``",
+			"macro_rules! ${1:macro_name}{",
+			"\t($($$nm:ident),+) => {",
+			"\t\t$(",
+			"\t\t$2",
+			"\t\t)+",
+			"\t};",
+			"}",
+		],
+		"description": "macro_rules (jc)",
+	},
+
+	"jtest_with_path": {
+		"prefix": "jtest_with_path",
+		"body": [
+			"// region:    --- Tests",
+			"#[cfg(test)]",
+			"#[path = \"../_tests/tests_processor.rs\"]",
+			"mod tests;",
+			"// endregion: --- Tests",
+			"",
+			"",
+		],
+		"description": "jtest_with_path",
+	},
+	"jexample": {
+		"prefix": "jexample",
+		"body": [
+			"#![allow(unused)] // For early development.",
+			"",
+			"use anyhow::Result;",
+			"",
+			"fn main() -> Result<()> {",
+			"\t$1Ok(())",
+			"}",
+			"",
+		],
+		"description": "jexample",
+	},
+}
