@@ -1,6 +1,16 @@
 {
 	// -- Rust10x
 
+	"10x-comment-section": {
+		"prefix": "10x-comment-section",
+		"body": [
+			"// region:    --- ${1:Section}",
+			"${2}",
+			"// endregion: --- ${1:Section}",
+		],
+		"description": "Comment Section",
+	},
+
 	// -- JC ZED XP
 	"jc_format": {
 		"prefix": "jc_format",

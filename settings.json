@@ -68,6 +68,7 @@
 	// -- Files
 	"file_types": {
 		"Markdown": ["aip"],
+		"JSONC": ["code-snippets"],
 	},
 	"file_scan_inclusions": [
 		//
@@ -82,6 +83,7 @@
 			"show_edit_predictions": true,
 		},
 		"Markdown": {
+			"auto_indent": false,
 			"show_edit_predictions": false,
 			"hard_tabs": false,
 			"format_on_save": "off",
@@ -90,6 +92,38 @@
 			"show_edit_predictions": false,
 			"hard_tabs": false,
 			"format_on_save": "off",
+		},
+		// NOT NEEDED SHOULD BE THE DEFAULT
+		// "JSONC": {
+		// 	"prettier": {
+		// 		"trailingComma": "all",
+		// 	},
+		// },
+	},
+
+	// -- LSP
+	"lsp": {
+		"rust-analyzer": {
+			"initialization_options": {
+				"rustfmt": {
+					"extraArgs": ["+nightly"],
+				},
+			},
+		},
+		"json-language-server": {
+			"settings": {
+				"json": {
+					"validate": { "enable": true },
+					"format": { "enable": true },
+					"schemas": [
+						{
+							// somehow the code-snippets still show the warng So, not sure.
+							"fileMatch": ["*.jsonc", "*.code-snippets"],
+							"allowTrailingCommas": true,
+						},
+					],
+				},
+			},
 		},
 	},
 
