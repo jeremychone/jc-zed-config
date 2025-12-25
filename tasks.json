@@ -9,7 +9,7 @@
 		"show_command": true,
 	},
 	{
-		"label": "WezTerm ",
+		"label": "WezTerm",
 		"command": "open",
 		"args": [
 			"-n",
@@ -24,7 +24,7 @@
 		"hide": "on_success",
 	},
 	{
-		"label": "Alacrity Term - Alacritty/TMUX here",
+		"label": "Alacrity Term",
 		"command": "open",
 		"args": [
 			"-n",

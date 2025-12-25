@@ -5,6 +5,19 @@
 		},
 	},
 
+	// -- Tasks
+	{
+		"bindings": {
+			"alt-cmd-j": [
+				"task::Spawn",
+				{
+					"task_name": "Alacrity Term",
+					// "reveal_target": "center",
+				},
+			],
+		},
+	},
+
 	// -- Surround
 	// <>
 	{
