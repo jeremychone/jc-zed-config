@@ -14,7 +14,7 @@
 	// -- JC ZED XP
 	"jc_format": {
 		"prefix": "jc_format",
-		"body": ["format!(${1:HELLO})"],
+		"body": ["format!(\"${1:TEXT}\")"],
 		"description": "format!",
 	},
 	"jc_trace_debug": {
