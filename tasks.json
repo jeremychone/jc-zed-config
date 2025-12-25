@@ -9,21 +9,6 @@
 		"show_command": true,
 	},
 	{
-		"label": "WezTerm",
-		"command": "open",
-		"args": [
-			"-n",
-			"-a",
-			"WezTerm",
-			"--args",
-			"start",
-			"--cwd",
-			"$ZED_WORKTREE_ROOT",
-		],
-		"reveal": "never",
-		"hide": "on_success",
-	},
-	{
 		"label": "Alacrity Term",
 		"command": "open",
 		"args": [
@@ -41,6 +26,21 @@
 		// "show_summary": true,
 		// Whether to show the command line in the output of the spawned task, defaults to `true`.
 		// "show_command": true,
+		"reveal": "never",
+		"hide": "on_success",
+	},
+	{
+		"label": "WezTerm",
+		"command": "open",
+		"args": [
+			"-n",
+			"-a",
+			"WezTerm",
+			"--args",
+			"start",
+			"--cwd",
+			"$ZED_WORKTREE_ROOT",
+		],
 		"reveal": "never",
 		"hide": "on_success",
 	},
