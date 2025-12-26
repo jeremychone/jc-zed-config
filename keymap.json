@@ -5,6 +5,16 @@
 		},
 	},
 
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-enter": [
+				"action::Sequence",
+				["editor::NewlineBelow", "editor::MoveUp", "editor::MoveToEndOfLine"],
+			],
+		},
+	},
+
 	// -- Tasks
 	{
 		"bindings": {
