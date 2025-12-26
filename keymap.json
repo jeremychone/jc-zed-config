@@ -48,13 +48,10 @@
 	{
 		"context": "Editor",
 		"bindings": {
-			"cmd-;": "editor::MoveToEndOfLine",
-		},
-	},
-	{
-		"context": "Editor",
-		"bindings": {
-			"cmd-;": ["workspace::SendKeystrokes", "cmd-; ;"],
+			"cmd-;": [
+				"action::Sequence",
+				["editor::MoveToEndOfLine", ["workspace::SendKeystrokes", "cmd-; ;"]],
+			],
 		},
 	},
 
