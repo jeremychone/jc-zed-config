@@ -8,7 +8,7 @@
 	// -- Tasks
 	{
 		"bindings": {
-			"alt-cmd-j": [
+			"ctrl-cmd-j": [
 				"task::Spawn",
 				{
 					"task_name": "Alacrity Term",
