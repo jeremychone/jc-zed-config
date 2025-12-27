@@ -139,8 +139,13 @@
 	// https://zed-themes.com/themes/vscode-dark-modern?name=VSCode%20Dark%20Modern
 	"theme": "VSCode Dark Modern",
 
-	// "buffer_font_family": "Source Code Pro",
+	// UI Font
+	// ui_font_family // let the default be
 	"ui_font_size": 18,
+
+	// Buffer font
+	// "MesloLGS Nerd Font" "JetBrainsMono Nerd Font" "JetBrainsMonoNL Nerd Font"
+	"buffer_font_family": "MesloLGS Nerd Font",
 	"buffer_font_size": 18,
 
 	"terminal": {
