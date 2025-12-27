@@ -1,5 +1,10 @@
 {
 	// -- Rust10x
+	"10x-debug-println": {
+		"prefix": "10x-debug-println",
+		"body": ["println!(\"->> $1{$2}$3\"$4);"],
+		"description": "println",
+	},
 
 	"10x-comment-section": {
 		"prefix": "10x-comment-section",
