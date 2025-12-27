@@ -139,7 +139,7 @@
 	// https://zed-themes.com/themes/vscode-dark-modern?name=VSCode%20Dark%20Modern
 	"theme": "VSCode Dark Modern",
 
-	"buffer_font_family": "Menlo",
+	// "buffer_font_family": "Source Code Pro",
 	"ui_font_size": 18,
 	"buffer_font_size": 18,
 
