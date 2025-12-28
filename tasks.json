@@ -25,7 +25,7 @@
 		"command": "zed-tasks",
 		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
 		"reveal": "never",
-		"hide": "on_success",
+		"hide": "never",
 	},
 	// Pro@coder RUN
 	{
