@@ -22,13 +22,10 @@
 			"tmux",
 			"new-session",
 		],
-		// Whether to show the task line in the output of the spawned task, defaults to `true`.
-		// "show_summary": true,
-		// Whether to show the command line in the output of the spawned task, defaults to `true`.
-		// "show_command": true,
 		"reveal": "never",
 		"hide": "on_success",
 	},
+	// jc-zed-tasks
 	{
 		"label": "pro@coder",
 		"command": "zed-tasks",
@@ -39,12 +36,23 @@
 			"--pane",
 			"pro@coder",
 		],
-		// "args": ["--dir", "$ZED_WORKTREE_ROOT", "--pane-name", "pro@coder"],
-		// Whether to show the task line in the output of the spawned task, defaults to `true`.
-		// "show_summary": true,
-		// Whether to show the command line in the output of the spawned task, defaults to `true`.
-		// "show_command": true,
-		// "reveal": "always",
+		"hide": "on_success",
+	},
+
+	// TOGGLE AI
+	{
+		"label": "Toggle AI",
+		"command": "zed-tasks",
+		"args": ["zed-toggle-ai"],
+		"hide": "on_success",
+	},
+
+	// -- Others
+	{
+		"label": "Fork here",
+		"command": "fork",
+		"args": ["$ZED_WORKTREE_ROOT"],
+		"reveal": "never",
 		"hide": "on_success",
 	},
 	{
@@ -59,17 +67,6 @@
 			"--cwd",
 			"$ZED_WORKTREE_ROOT",
 		],
-		"reveal": "never",
-		"hide": "on_success",
-	},
-	{
-		"label": "Fork here",
-		"command": "fork",
-		"args": ["$ZED_WORKTREE_ROOT"],
-		// Whether to show the task line in the output of the spawned task, defaults to `true`.
-		// "show_summary": true,
-		// Whether to show the command line in the output of the spawned task, defaults to `true`.
-		// "show_command": true,
 		"reveal": "never",
 		"hide": "on_success",
 	},
