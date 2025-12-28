@@ -1,6 +1,5 @@
 // Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
 //
-// Example:
 [
 	{
 		"label": "DEBUG: print ZED vars",
@@ -27,6 +26,13 @@
 	},
 	// jc-zed-tasks
 	{
+		"label": "AIPack RUN",
+		"command": "zed-tasks",
+		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
+		"reveal": "never",
+		"hide": "on_success",
+	},
+	{
 		"label": "pro@coder",
 		"command": "zed-tasks",
 		"args": [
@@ -36,6 +42,7 @@
 			"--pane",
 			"pro@coder",
 		],
+		"reveal": "never",
 		"hide": "on_success",
 	},
 
@@ -44,6 +51,7 @@
 		"label": "Toggle AI",
 		"command": "zed-tasks",
 		"args": ["zed-toggle-ai"],
+		"reveal": "never",
 		"hide": "on_success",
 	},
 
