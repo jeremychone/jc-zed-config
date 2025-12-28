@@ -140,4 +140,22 @@
 			"alt-shift-g": "search::SelectPreviousMatch",
 		},
 	},
+
+	// -- JC Remaping Opens
+	{
+		"bindings": {
+			"alt-cmd-o": "workspace::Open",
+		},
+	},
+	// JC: Because I always do this. Rather if ever the workspace::Open
+	{
+		"bindings": {
+			"cmd-o": [
+				"projects::OpenRecent",
+				{
+					"create_new_window": false,
+				},
+			],
+		},
+	},
 ]
