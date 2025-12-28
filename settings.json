@@ -178,8 +178,8 @@
 				// "variable": { "color": "#ff0000" },
 				"variable.mutable": { "color": "#00ff00" }, // do not work
 				// Note: if comment or comment.doc italic, then a little cursive
-				"tag": { "color": "#ff00ff" },
-				"attribute": { "color": "#00ffff" },
+				// "tag": { "color": "#bb55bb" },
+				// "attribute": { "color": "#00ffff" },
 				"keyword": { "color": "#569CD6" },
 			},
 
