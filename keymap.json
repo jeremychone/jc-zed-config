@@ -65,61 +65,39 @@
 
 	// -- cmd+shift+g - Git panel Override
 	{
-		"context": "Global",
-		"bindings": {
-			"cmd-shift-g": "git_panel::ToggleFocus",
-		},
-	},
-	{
-		"context": "Editor",
-		"bindings": {
-			"cmd-shift-g": "git_panel::ToggleFocus",
-		},
-	},
-	{
-		"context": "Workspace",
+		"context": "Global || Editor || Workspace",
 		"bindings": {
 			"cmd-shift-g": "git_panel::ToggleFocus",
 		},
 	},
 
-	// --
-
+	// -- JC Custom Pante
 	{
 		"bindings": {
 			"ctrl-cmd-right": "pane::SplitAndMoveRight",
 		},
 	},
+
+	// -- JC Move line  / Indent
 	{
 		"context": "Editor",
 		"bindings": {
 			"cmd-[": "editor::MoveLineDown",
-		},
-	},
-	{
-		"context": "Editor",
-		"bindings": {
 			"cmd-]": "editor::MoveLineUp",
+			"ctrl-alt-]": "editor::Indent",
+			"ctrl-alt-[": "editor::Outdent",
 		},
 	},
+
+	// -- Toggle inlay
 	{
 		"context": "!ContextEditor > (Editor && mode == full)",
 		"bindings": {
 			"cmd-u": "editor::ToggleInlayHints",
 		},
 	},
-	{
-		"context": "Editor",
-		"bindings": {
-			"ctrl-alt-]": "editor::Indent",
-		},
-	},
-	{
-		"context": "Editor",
-		"bindings": {
-			"ctrl-alt-[": "editor::Outdent",
-		},
-	},
+
+	// -- Pame Management
 	{
 		"context": "Workspace",
 		"bindings": {
