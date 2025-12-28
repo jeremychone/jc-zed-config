@@ -32,14 +32,20 @@
 	{
 		"label": "pro@coder",
 		"command": "zed-tasks",
-		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
+		"args": [
+			"tmux-run-aip",
+			"--dir",
+			"$ZED_WORKTREE_ROOT",
+			"--pane",
+			"pro@coder",
+		],
 		// "args": ["--dir", "$ZED_WORKTREE_ROOT", "--pane-name", "pro@coder"],
 		// Whether to show the task line in the output of the spawned task, defaults to `true`.
 		// "show_summary": true,
 		// Whether to show the command line in the output of the spawned task, defaults to `true`.
 		// "show_command": true,
-		"reveal": "always",
-		// "hide": "on_success",
+		// "reveal": "always",
+		"hide": "on_success",
 	},
 	{
 		"label": "WezTerm",
