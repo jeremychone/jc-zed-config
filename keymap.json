@@ -50,7 +50,7 @@
 		"bindings": {
 			"cmd-;": [
 				"action::Sequence",
-				["editor::MoveToEndOfLine", ["workspace::SendKeystrokes", "cmd-; ;"]],
+				["editor::MoveToEndOfLine", ["workspace::SendKeystrokes", ";"]],
 			],
 		},
 	},
