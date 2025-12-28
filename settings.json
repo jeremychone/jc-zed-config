@@ -169,6 +169,10 @@
 			"editor.background": "#000",
 			"background": "#000",
 
+			// This is the background of the popups/menu
+			// "surface.background": "#ff0000",
+			// "elevated_surface.background": "#ff0000",
+
 			// when keyword selected for the other keywords
 			"editor.document_highlight.read_background": "#222222",
 
