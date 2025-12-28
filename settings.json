@@ -30,6 +30,10 @@
 		"breadcrumbs": false,
 	},
 
+	"status_bar": {
+		// "experimental.show": false,
+	},
+
 	// -- Completion
 	"disable_ai": true,
 	"features": {
