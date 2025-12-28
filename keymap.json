@@ -1,10 +1,6 @@
 [
-	{
-		"bindings": {
-			"cmd-r": ["workspace::SendKeystrokes", "ctrl-` r"],
-		},
-	},
-
+	// -- Line Management
+	// Add line below
 	{
 		"context": "Editor",
 		"bindings": {
@@ -14,14 +10,60 @@
 			],
 		},
 	},
+	// Delete line
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-backspace": "editor::DeleteLine",
+		},
+	},
+	// Move Line & Indent
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-[": "editor::MoveLineDown",
+			"cmd-]": "editor::MoveLineUp",
+			"ctrl-alt-]": "editor::Indent",
+			"ctrl-alt-[": "editor::Outdent",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-;": [
+				"action::Sequence",
+				["editor::MoveToEndOfLine", ["workspace::SendKeystrokes", ";"]],
+			],
+		},
+	},
+
+	// -- In zed send r to term
+	{
+		"bindings": {
+			"ctrl-alt-r": ["workspace::SendKeystrokes", "ctrl-` r"],
+		},
+	},
 
 	// -- Tasks
+	// Start terminal
 	{
 		"bindings": {
 			"ctrl-cmd-j": [
 				"task::Spawn",
 				{
 					"task_name": "Alacrity Term",
+					// "reveal_target": "center",
+				},
+			],
+		},
+	},
+	// API Run
+	{
+		"bindings": {
+			"cmd-r": [
+				"task::Spawn",
+				{
+					"task_name": "AIP RUN",
 					// "reveal_target": "center",
 				},
 			],
@@ -44,25 +86,6 @@
 		},
 	},
 
-	// -- Multiple to add ; end of line
-	{
-		"context": "Editor",
-		"bindings": {
-			"cmd-;": [
-				"action::Sequence",
-				["editor::MoveToEndOfLine", ["workspace::SendKeystrokes", ";"]],
-			],
-		},
-	},
-
-	// Delete line
-	{
-		"context": "Editor",
-		"bindings": {
-			"cmd-backspace": "editor::DeleteLine",
-		},
-	},
-
 	// -- cmd+shift+g - Git panel Override
 	{
 		"context": "Global || Editor || Workspace",
@@ -75,17 +98,6 @@
 	{
 		"bindings": {
 			"ctrl-cmd-right": "pane::SplitAndMoveRight",
-		},
-	},
-
-	// -- JC Move line  / Indent
-	{
-		"context": "Editor",
-		"bindings": {
-			"cmd-[": "editor::MoveLineDown",
-			"cmd-]": "editor::MoveLineUp",
-			"ctrl-alt-]": "editor::Indent",
-			"ctrl-alt-[": "editor::Outdent",
 		},
 	},
 
