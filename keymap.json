@@ -4,6 +4,16 @@
 	{
 		"context": "Editor",
 		"bindings": {
+			"cmd-shift-enter": [
+				"action::Sequence",
+				["editor::NewlineAbove", "editor::MoveDown", "editor::MoveToEndOfLine"],
+			],
+		},
+	},
+	// Add line below
+	{
+		"context": "Editor",
+		"bindings": {
 			"ctrl-cmd-enter": [
 				"action::Sequence",
 				["editor::NewlineBelow", "editor::MoveUp", "editor::MoveToEndOfLine"],
@@ -27,6 +37,7 @@
 			"ctrl-alt-[": "editor::Outdent",
 		},
 	},
+	// End line with ;
 	{
 		"context": "Editor",
 		"bindings": {
