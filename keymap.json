@@ -4,7 +4,7 @@
 	{
 		"context": "Editor",
 		"bindings": {
-			"ctrl-shift-enter": [
+			"ctrl-cmd-enter": [
 				"action::Sequence",
 				["editor::NewlineBelow", "editor::MoveUp", "editor::MoveToEndOfLine"],
 			],
@@ -158,9 +158,9 @@
 			],
 		},
 	},
- {
-  "bindings": {
-   "ctrl-cmd-z": "workspace::ToggleZoom"
-  }
- }
+	{
+		"bindings": {
+			"ctrl-cmd-z": "workspace::ToggleZoom",
+		},
+	},
 ]
