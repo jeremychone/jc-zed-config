@@ -158,4 +158,9 @@
 			],
 		},
 	},
+ {
+  "bindings": {
+   "ctrl-cmd-z": "workspace::ToggleZoom"
+  }
+ }
 ]
