@@ -62,7 +62,7 @@
 			"ctrl-cmd-j": [
 				"task::Spawn",
 				{
-					"task_name": "Alacrity Term",
+					"task_name": "Dev Term",
 					// "reveal_target": "center",
 				},
 			],
