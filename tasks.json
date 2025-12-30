@@ -7,7 +7,7 @@
 		"command": "jc-zed-tasks",
 		"args": ["new-dev-term", "--cwd", "$ZED_WORKTREE_ROOT", "--with-tmux"],
 		"reveal": "never",
-		"hide": "on_success",
+		// "hide": "on_success",
 	},
 	// AIP RUN
 	{
@@ -15,8 +15,17 @@
 		"command": "jc-zed-tasks",
 		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
 		"reveal": "never",
-		"hide": "never",
+		// "hide": "on_success",
 	},
+	// TOGGLE AI
+	{
+		"label": "Toggle AI",
+		"command": "jc-zed-tasks",
+		"args": ["zed-toggle-ai"],
+		"reveal": "never",
+		// "hide": "on_success",
+	},
+
 	// Pro@coder RUN
 	{
 		"label": "pro@coder",
@@ -28,15 +37,6 @@
 			"--pane",
 			"pro@coder",
 		],
-		"reveal": "never",
-		"hide": "on_success",
-	},
-
-	// TOGGLE AI
-	{
-		"label": "Toggle AI",
-		"command": "jc-zed-tasks",
-		"args": ["zed-toggle-ai"],
 		"reveal": "never",
 		"hide": "on_success",
 	},
