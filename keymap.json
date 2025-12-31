@@ -56,13 +56,25 @@
 	},
 
 	// -- Tasks
-	// Start terminal/tmux
+	// Start dev term (default, below)
 	{
 		"bindings": {
 			"ctrl-cmd-j": [
 				"task::Spawn",
 				{
-					"task_name": "Dev Term",
+					"task_name": "Dev Term Below",
+					// "reveal_target": "center",
+				},
+			],
+		},
+	},
+	// Start dev term (default, below)
+	{
+		"bindings": {
+			"ctrl-cmd-shift-j": [
+				"task::Spawn",
+				{
+					"task_name": "Dev Term Bottom",
 					// "reveal_target": "center",
 				},
 			],

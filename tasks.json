@@ -1,11 +1,33 @@
 // Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
 //
 [
-	// Dev Term"
+	// Dev Term (below, default)
 	{
-		"label": "Dev Term",
+		"label": "Dev Term Below",
 		"command": "jc-zed-tasks",
-		"args": ["new-dev-term", "--cwd", "$ZED_WORKTREE_ROOT", "--with-tmux"],
+		"args": [
+			"new-dev-term",
+			"--pos",
+			"below",
+			"--cwd",
+			"$ZED_WORKTREE_ROOT",
+			"--with-tmux",
+		],
+		"reveal": "never",
+		// "hide": "on_success",
+	},
+	// Dev Term (bottom) (inside the Zed)
+	{
+		"label": "Dev Term Bottom",
+		"command": "jc-zed-tasks",
+		"args": [
+			"new-dev-term",
+			"--pos",
+			"bottom",
+			"--cwd",
+			"$ZED_WORKTREE_ROOT",
+			"--with-tmux",
+		],
 		"reveal": "never",
 		// "hide": "on_success",
 	},
@@ -15,7 +37,7 @@
 		"command": "jc-zed-tasks",
 		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
 		"reveal": "never",
-		// "hide": "on_success",
+		"hide": "on_success",
 	},
 	// TOGGLE AI
 	{
@@ -23,7 +45,7 @@
 		"command": "jc-zed-tasks",
 		"args": ["zed-toggle-ai"],
 		"reveal": "never",
-		// "hide": "on_success",
+		"hide": "on_success",
 	},
 
 	// Pro@coder RUN

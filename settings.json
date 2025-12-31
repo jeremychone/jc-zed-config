@@ -35,7 +35,7 @@
 	},
 
 	// -- Completion
-	"disable_ai": true,
+	"disable_ai": false,
 	"features": {
 		"edit_prediction_provider": "copilot",
 	},
