@@ -2,10 +2,9 @@
 
 Just to share, ccherry-pick what you need. 
 
-Related: 
+Related Repos: 
 - [jc-zed-config (this one)](https://github.com/jeremychone/jc-zed-config)
 - [jc-zed-tasks](https://github.com/jeremychone/jc-zed-tasks)
-
 
 ## Keymap
 
@@ -71,6 +70,10 @@ The `settings.json` file is organized into several functional sections:
 - Theme Overrides: Heavily modifies the "VSCode Dark Modern" theme to use pure black backgrounds and custom syntax coloring for a high-contrast experience.
 - Terminal and Fonts: Configures font families (MesloLGS Nerd Font, Source Code Pro) and sizes for both the editor and the terminal.
 
+
+## Info
+
+License: Apache OR MIT
 
 
 [This Repo](https://github.com/jeremychone/jc-zed-config)
