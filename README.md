@@ -1,10 +1,15 @@
 # Jeremy Chone Zed Config
 
-Just to share, ccherry-pick what you need. 
+Just to share, cherry-pick what you need. 
 
 Related Repos: 
 - [jc-zed-config (this one)](https://github.com/jeremychone/jc-zed-config)
 - [jc-zed-tasks](https://github.com/jeremychone/jc-zed-tasks)
+- [jc-tmux-config](https://github.com/jeremychone/jc-tmux-config)
+
+## Setup
+
+- copy or git clone into `~/.config/zed/`
 
 ## Keymap
 
