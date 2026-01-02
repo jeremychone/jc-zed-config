@@ -13,30 +13,38 @@ Related Repos:
 
 ## Keymap
 
-- `cmd-shift-enter` Add line above and stay at end of line.
-- `ctrl-cmd-enter` Add line below and stay at end of line.
-- `cmd-backspace` Delete current line.
-- `cmd-[` Move current line down.
-- `cmd-]` Move current line up.
-- `ctrl-alt-]` Indent line.
-- `ctrl-alt-[` Outdent line.
-- `cmd-;` End line with `;`.
-- `ctrl-alt-r` Send 'r' keystroke to terminal.
-- `ctrl-cmd-j` Spawn Dev Term (Below).
-- `ctrl-cmd-shift-j` Spawn Dev Term (Bottom).
-- `cmd-r` Run AIP task.
-- `ctrl-cmd-a` Toggle AI.
-- `ctrl-alt-,` Surround selection with `< >`.
-- `ctrl-alt-9` Surround selection with `( )`.
-- `cmd-shift-g` Toggle Git panel focus.
-- `ctrl-cmd-right` Split pane and move right.
-- `cmd-u` Toggle inlay hints.
-- `alt-cmd-r` Toggle right dock.
-- `alt-g` Select next match.
-- `alt-shift-g` Select previous match.
-- `alt-cmd-o` Open file/project.
-- `cmd-o` Open recent projects.
-- `ctrl-cmd-z` Toggle pane zoom.
+- **Line Management**
+  - `cmd-shift-enter` Add line above and stay at end of line.
+  - `ctrl-cmd-enter` Add line below and stay at end of line.
+  - `cmd-backspace` Delete current line.
+  - `cmd-[` Move current line down.
+  - `cmd-]` Move current line up.
+  - `ctrl-alt-]` Indent line.
+  - `ctrl-alt-[` Outdent line.
+  - `cmd-;` End line with `;`.
+- **Terminal & Tasks**
+  - `ctrl-alt-r` Send 'r' keystroke to terminal.
+  - `ctrl-cmd-j` Spawn Dev Term (Below).
+  - `ctrl-cmd-shift-j` Spawn Dev Term (Bottom).
+  - `cmd-r` Run AIP task.
+  - `ctrl-cmd-a` Toggle AI.
+- **Surround**
+  - `ctrl-alt-,` Surround selection with `< >`.
+  - `ctrl-alt-9` Surround selection with `( )`.
+- **Panes & Workspace**
+  - `ctrl-cmd-right` Split pane and move right.
+  - `alt-cmd-r` Toggle right dock.
+  - `ctrl-cmd-z` Toggle pane zoom.
+- **Search**
+  - `alt-g` Select next match.
+  - `alt-shift-g` Select previous match.
+- **Project & Open**
+  - `alt-cmd-o` Open file/project.
+  - `cmd-o` Open recent projects.
+- **Git**
+  - `cmd-shift-g` Toggle Git panel focus.
+- **UI & Hints**
+  - `cmd-u` Toggle inlay hints.
 
 ### Sequence and Surround Techniques
 
