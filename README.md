@@ -10,7 +10,8 @@ Related Repos:
 
 ## Setup
 
-- copy or git clone into `~/.config/zed/`
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) `MesloLGS Nerd Font`
+- Copy or git clone into `~/.config/zed/`
 
 ## Keymap
 
