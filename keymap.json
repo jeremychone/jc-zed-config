@@ -186,4 +186,9 @@
 			"ctrl-cmd-z": "workspace::ToggleZoom",
 		},
 	},
+ {
+  "bindings": {
+   "alt-r": "editor::ReloadFile"
+  }
+ }
 ]
