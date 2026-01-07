@@ -97,6 +97,10 @@
 			"hard_tabs": false,
 			"format_on_save": "off",
 		},
+		"JSON": {
+			"hard_tabs": false,
+			"format_on_save": "off",
+		},
 		// NOT NEEDED SHOULD BE THE DEFAULT
 		// "JSONC": {
 		// 	"prettier": {
