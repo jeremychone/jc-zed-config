@@ -33,6 +33,14 @@
 	},
 	// AIP RUN
 	{
+		"label": "MD to HTML",
+		"command": "jc-zed-tasks",
+		"args": ["md-to-html", "--file", "$ZED_FILE"],
+		"reveal": "never",
+		"hide": "on_success",
+	},
+	// AIP RUN
+	{
 		"label": "AIP RUN",
 		"command": "jc-zed-tasks",
 		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],

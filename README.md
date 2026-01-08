@@ -58,20 +58,24 @@ For the surround functionality, the config uses `workspace::SendKeystrokes` to s
 
 The tasks defined in `tasks.json` rely on a custom utility called [jc-zed-tasks](https://github.com/jeremychone/rust-jc-zed-tasks). This is a centralized Rust-based CLI (available in a separate repository) designed to manage terminal positions, tmux integration, and AI toggling within the Zed environment.
 
-- Terminal Management (via [jc-zed-tasks](https://github.com/jeremychone/rust-jc-zed-tasks))
-  - `Dev Term Below` Opens a development terminal in a pane below with tmux.
-  - `Dev Term Bottom` Opens a development terminal in a pane at the bottom with tmux.
 - AI & AIP (via [jc-zed-tasks](https://github.com/jeremychone/rust-jc-zed-tasks))
   - `Toggle AI` Toggles Zed AI functionality via .
     - Otherwise, even when "subtle" we see some UI elements follow cursor. 
   - `AIP RUN` Send the 'r' to the first `aip` (AIPack) tmux pane. 
   - `pro@coder` Runs AIP task specifically in the `pro@coder` tmux pane. (since AIPack set the agent name as pane title in tmux)
+- Other JC Zed Tasks (via [jc-zed-tasks](https://github.com/jeremychone/rust-jc-zed-tasks))
+  - `Dev Term Below` Opens a development terminal in a pane below with tmux.
+  - `Dev Term Bottom` Opens a development terminal in a pane at the bottom with tmux.
+  - `MD to HTML` Converts the current Markdown file to HTML via [jc-zed-tasks](https://github.com/jeremychone/rust-jc-zed-tasks).
 - External Tools
   - `Fork here` Opens Fork git client at the project root.
   - `WezTerm` Opens WezTerm terminal emulator at the project root.
 - Debug & Others
   - `DEBUG: print ZED vars` Displays environment variables containing "ZED".
   - `Example task` A demonstration task showing shell execution and configuration options.
+  
+Do install the [jc-zed-tasks](https://github.com/jeremychone/rust-jc-zed-tasks), do a: 
+- `cargo install jc-zed-tasks`
 
 ## Settings
 
