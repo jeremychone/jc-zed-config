@@ -1,6 +1,7 @@
 // Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
 //
 [
+	// -- JC Zed Tasks
 	// Dev Term (below, default)
 	{
 		"label": "Dev Term Below",
@@ -33,19 +34,25 @@
 		"reveal": "never",
 		// "hide": "on_success",
 	},
-	// AIP RUN
-	{
-		"label": "MD to HTML",
-		"command": "jc-zed-tasks",
-		"args": ["md-to-html", "--file", "$ZED_FILE"],
-		"reveal": "never",
-		"hide": "on_success",
-	},
-	// AIP RUN
+	// AIP RUN first found
 	{
 		"label": "AIP RUN",
 		"command": "jc-zed-tasks",
 		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
+		"reveal": "never",
+		"hide": "on_success",
+	},
+	// AIP Run pro@coder
+	{
+		"label": "pro@coder",
+		"command": "jc-zed-tasks",
+		"args": [
+			"tmux-run-aip",
+			"--dir",
+			"$ZED_WORKTREE_ROOT",
+			"--pane",
+			"pro@coder",
+		],
 		"reveal": "never",
 		"hide": "on_success",
 	},
@@ -57,18 +64,11 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
-
-	// Pro@coder RUN
+	// MD TO HTML
 	{
-		"label": "pro@coder",
+		"label": "MD to HTML",
 		"command": "jc-zed-tasks",
-		"args": [
-			"tmux-run-aip",
-			"--dir",
-			"$ZED_WORKTREE_ROOT",
-			"--pane",
-			"pro@coder",
-		],
+		"args": ["md-to-html", "--file", "$ZED_FILE"],
 		"reveal": "never",
 		"hide": "on_success",
 	},
