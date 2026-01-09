@@ -72,14 +72,13 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
-
-	// CLIPBOARD to Image
+	// Save clipboard to image
 	{
-		"label": "CLIPBOARD to Image",
+		"label": "Save Clipboard to Image",
 		"command": "jc-zed-tasks",
-		"args": ["clipboard-to-image", "--dir", "$ZED_DIRNAME"],
-		// "reveal": "never",
-		// "hide": "on_success",
+		"args": ["save-clipboard-image", "--dir", "$ZED_DIRNAME"],
+		"reveal": "never",
+		"hide": "on_success",
 	},
 
 	// -- Others
@@ -110,6 +109,7 @@
 		"command": "env | grep ZED",
 		"reveal": "always",
 		"show_command": true,
+		// "use_new_terminal": true,
 	},
 	{
 		"label": "Example task",
