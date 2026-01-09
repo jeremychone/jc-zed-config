@@ -57,8 +57,6 @@
 	"hover_popover_delay": 5000,
 
 	// -- Editor
-	"tab_size": 2,
-	"hard_tabs": true,
 	"inlay_hints": {
 		"show_type_hints": true,
 		"enabled": false,
@@ -66,7 +64,6 @@
 	"indent_guides": {
 		"enabled": false,
 	},
-	"extend_comment_on_newline": false,
 	"inline_code_actions": false,
 
 	// -- Files
@@ -79,6 +76,14 @@
 		".aipack/*",
 		".notes/*",
 	],
+
+	// -- Editor Content
+	"tab_size": 2,
+	"hard_tabs": true,
+	"extend_comment_on_newline": false,
+	"ensure_final_newline_on_save": false,
+
+	// -- Editor Content per language
 	"languages": {
 		"Rust": {
 			"extend_comment_on_newline": false,
