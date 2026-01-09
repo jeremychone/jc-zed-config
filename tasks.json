@@ -73,6 +73,15 @@
 		"hide": "on_success",
 	},
 
+	// CLIPBOARD to Image
+	{
+		"label": "CLIPBOARD to Image",
+		"command": "jc-zed-tasks",
+		"args": ["clipboard-to-image", "--dir", "$ZED_DIRNAME"],
+		// "reveal": "never",
+		// "hide": "on_success",
+	},
+
 	// -- Others
 	{
 		"label": "Fork here",
