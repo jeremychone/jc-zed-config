@@ -76,7 +76,7 @@
 	{
 		"label": "Save Clipboard to Image",
 		"command": "jc-zed-tasks",
-		"args": ["save-clipboard-image", "--dir", "$ZED_DIRNAME"],
+		"args": ["save-clipboard-image", "--dir", "$ZED_DIRNAME", "--copy-md-ref"],
 		"reveal": "never",
 		"hide": "on_success",
 	},
