@@ -11,7 +11,7 @@
 			"--pos",
 			"below",
 			"--cwd",
-			"$ZED_WORKTREE_ROOT",
+			"'$ZED_WORKTREE_ROOT'",
 			"--with-tmux",
 			"--show-if-present",
 		],
@@ -27,7 +27,7 @@
 			"--pos",
 			"bottom",
 			"--cwd",
-			"$ZED_WORKTREE_ROOT",
+			"'$ZED_WORKTREE_ROOT'",
 			"--with-tmux",
 			"--show-if-present",
 		],
@@ -38,7 +38,7 @@
 	{
 		"label": "AIP RUN",
 		"command": "jc-zed-tasks",
-		"args": ["tmux-run-aip", "--dir", "$ZED_WORKTREE_ROOT"],
+		"args": ["tmux-run-aip", "--dir", "'$ZED_WORKTREE_ROOT'"],
 		"reveal": "never",
 		"hide": "on_success",
 	},
@@ -49,7 +49,7 @@
 		"args": [
 			"tmux-run-aip",
 			"--dir",
-			"$ZED_WORKTREE_ROOT",
+			"'$ZED_WORKTREE_ROOT'",
 			"--pane",
 			"pro@coder",
 		],
@@ -68,7 +68,7 @@
 	{
 		"label": "MD to HTML",
 		"command": "jc-zed-tasks",
-		"args": ["md-to-html", "--file", "$ZED_FILE"],
+		"args": ["md-to-html", "--file", "'$ZED_FILE'"],
 		"reveal": "never",
 		"hide": "on_success",
 	},
@@ -76,7 +76,12 @@
 	{
 		"label": "Save Clipboard to Image",
 		"command": "jc-zed-tasks",
-		"args": ["save-clipboard-image", "--dir", "$ZED_DIRNAME", "--copy-md-ref"],
+		"args": [
+			"save-clipboard-image",
+			"--dir",
+			"'$ZED_DIRNAME'",
+			"--copy-md-ref",
+		],
 		"reveal": "never",
 		"hide": "on_success",
 	},
