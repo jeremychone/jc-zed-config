@@ -190,6 +190,15 @@
 			"title_bar.background": "#000",
 			"panel.background": "#0a0a0a",
 
+			"players": [
+				// Main player,
+				{
+					"cursor": "#AEAFAD",
+					"background": null,
+					"selection": "#112233",
+				},
+			],
+
 			"syntax": {
 				"title": { "color": "#6699ff" },
 				// "variable": { "color": "#ff0000" },
