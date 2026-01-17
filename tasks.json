@@ -85,9 +85,9 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
-	// Profile Toggle
+	// Toggle profile
 	{
-		"label": "Profile toggle",
+		"label": "Toggle Profile",
 		"command": "jc-zed-tasks",
 		"args": ["toggle-profile"],
 		"reveal": "always",
