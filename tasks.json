@@ -90,8 +90,8 @@
 		"label": "Toggle Profile",
 		"command": "jc-zed-tasks",
 		"args": ["toggle-profile"],
-		"reveal": "always",
-		// "hide": "on_success",
+		"reveal": "never",
+		"hide": "on_success",
 	},
 
 	// -- Others
