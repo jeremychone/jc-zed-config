@@ -54,7 +54,7 @@
 		"enabled": true,
 		"enable_feedback": false,
 	},
-	"hover_popover_delay": 5000,
+	"hover_popover_delay": 2000,
 
 	// -- Editor
 	"inlay_hints": {
