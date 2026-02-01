@@ -47,6 +47,16 @@
 			],
 		},
 	},
+	// End line with ?;
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-alt-;": [
+				"action::Sequence",
+				["editor::MoveToEndOfLine", ["workspace::SendKeystrokes", "?;"]],
+			],
+		},
+	},
 
 	// -- In zed send r to term
 	{
@@ -186,9 +196,9 @@
 			"ctrl-cmd-z": "workspace::ToggleZoom",
 		},
 	},
- {
-  "bindings": {
-   "alt-r": "editor::ReloadFile"
-  }
- }
+	{
+		"bindings": {
+			"alt-r": "editor::ReloadFile",
+		},
+	},
 ]
