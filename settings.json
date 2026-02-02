@@ -100,12 +100,22 @@
 			"hard_tabs": false,
 			"format_on_save": "off",
 		},
+		"Python": {
+			"auto_indent": false,
+			"show_edit_predictions": false,
+			"hard_tabs": false,
+			"format_on_save": "off",
+		},
 		"YAML": {
 			"show_edit_predictions": false,
 			"hard_tabs": false,
 			"format_on_save": "off",
 		},
 		"JSON": {
+			"hard_tabs": false,
+			"format_on_save": "off",
+		},
+		"JSONC": {
 			"hard_tabs": false,
 			"format_on_save": "off",
 		},
