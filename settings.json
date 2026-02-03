@@ -93,6 +93,7 @@
 		},
 		"Lua": {
 			"show_edit_predictions": true,
+			"use_on_type_format": false, // otherwise, change prev line on enter
 		},
 		"Markdown": {
 			"auto_indent": false,
