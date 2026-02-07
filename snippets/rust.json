@@ -26,6 +26,11 @@
     "body": ["let res = (|| {", "\t//${1}", "  })();"]
   },
 
+  "10x-result": {
+    "prefix": "10x-result",
+    "body": ["Result<${1}>"]
+  },
+
   // -- JC ZED XP
   "jc_format": {
     "prefix": "jc_format",
