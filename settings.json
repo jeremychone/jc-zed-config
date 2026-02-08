@@ -7,248 +7,251 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	// -- Bars
-	"project_panel": {
-		"auto_fold_dirs": false,
-		"hide_root": false,
-	},
-	"show_completion_documentation": false,
-	"title_bar": {
-		"show_sign_in": false,
-	},
+  // -- Bars
+  "project_panel": {
+    "auto_fold_dirs": false,
+    "hide_root": false,
+  },
+  "show_completion_documentation": false,
+  "title_bar": {
+    "show_sign_in": false,
+  },
 
-	"tab_bar": {
-		"show": true,
-		"show_tab_bar_buttons": false,
-	},
-	"tabs": {
-		"file_icons": true,
-	},
+  "tab_bar": {
+    "show": true,
+    "show_tab_bar_buttons": false,
+  },
+  "tabs": {
+    "file_icons": true,
+  },
 
-	"toolbar": {
-		"quick_actions": false,
-		"breadcrumbs": false,
-	},
+  "toolbar": {
+    "quick_actions": false,
+    "breadcrumbs": false,
+  },
 
-	"status_bar": {
-		// "experimental.show": false,
-	},
+  "status_bar": {
+    // "experimental.show": false,
+  },
 
-	// -- Completion
-	"disable_ai": true,
-	"show_completions_on_input": false,
-	"show_edit_predictions": true,
-	"edit_predictions": {
-		"provider": "copilot",
+  // -- Completion
+  "disable_ai": true,
+  "show_completions_on_input": false,
+  "show_edit_predictions": true,
+  "edit_predictions": {
+    "provider": "copilot",
     "mode": "subtle",
-		// "disabled_globs": ["**/*.md"]
-	},
-	"agent": {
-		"default_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-5-mini",
-		},
-		"model_parameters": [],
-		"enabled": true,
-		"enable_feedback": false,
-	},
+    // "disabled_globs": ["**/*.md"]
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+    },
+    "model_parameters": [],
+    "enabled": true,
+    "enable_feedback": false,
+  },
 
-	// -- hover
-	"hover_popover_enabled": false, // disable popover
-	"hover_popover_delay": 2000, // will have no effect since above
+  // -- hover
+  "hover_popover_enabled": false, // disable popover
+  "hover_popover_delay": 2000, // will have no effect since above
 
-	// -- Editor
-	"inlay_hints": {
-		"show_type_hints": true,
-		"enabled": false,
-	},
-	"indent_guides": {
-		"enabled": false,
-	},
-	"inline_code_actions": false,
+  // -- Editor
+  "inlay_hints": {
+    "show_type_hints": true,
+    "enabled": false,
+  },
+  "indent_guides": {
+    "enabled": false,
+  },
+  "inline_code_actions": false,
 
-	// -- Files
-	"file_types": {
-		"Markdown": ["aip"],
-		"JSONC": ["code-snippets"],
-	},
-	"file_scan_inclusions": [
-		//
-		".aipack/*",
-		".notes/*",
-	],
+  // -- Files
+  "file_types": {
+    "Markdown": ["aip"],
+    "JSONC": ["code-snippets"],
+  },
+  "file_scan_inclusions": [
+    //
+    ".aipack/*",
+    ".notes/*",
+  ],
 
-	// -- Editor Content
-	"tab_size": 2,
-	"hard_tabs": true,
-	"extend_comment_on_newline": false,
-	"ensure_final_newline_on_save": false,
+  // -- Editor Content
+  "tab_size": 2,
+  "hard_tabs": true,
+  "extend_comment_on_newline": false,
+  "ensure_final_newline_on_save": false,
 
-	// -- Editor Content per language
-	"languages": {
-		"Rust": {
-			"extend_comment_on_newline": false,
-		},
-		"Lua": {
-			"show_edit_predictions": true,
-			"use_on_type_format": false, // otherwise, change prev line on enter
-		},
-		"Markdown": {
-			"auto_indent": false,
-			"show_edit_predictions": false,
-			"hard_tabs": false,
-			"format_on_save": "off",
-		},
-		"Python": {
-			"auto_indent": false,
-			"show_edit_predictions": false,
-			"hard_tabs": false,
-			"format_on_save": "off",
-		},
-		"YAML": {
-			"show_edit_predictions": false,
-			"hard_tabs": false,
-			"format_on_save": "off",
-		},
-		"JSON": {
-			"hard_tabs": false,
-			"format_on_save": "off",
-		},
-		"JSONC": {
-			"hard_tabs": false,
-			"format_on_save": "off",
-		},
-		// NOT NEEDED SHOULD BE THE DEFAULT
-		// "JSONC": {
-		// 	"prettier": {
-		// 		"trailingComma": "all",
-		// 	},
-		// },
-	},
+  // -- Editor Content per language
+  "languages": {
+    "Rust": {
+      "extend_comment_on_newline": false,
+    },
+    "Lua": {
+      "show_edit_predictions": true,
+      "use_on_type_format": false, // otherwise, change prev line on enter
+    },
+    "Markdown": {
+      "auto_indent": false,
+      "show_edit_predictions": false,
+      "hard_tabs": false,
+      "format_on_save": "off",
+    },
+    "Python": {
+      "auto_indent": false,
+      "show_edit_predictions": false,
+      "hard_tabs": false,
+      "format_on_save": "off",
+    },
+    "YAML": {
+      "show_edit_predictions": false,
+      "hard_tabs": false,
+      "format_on_save": "off",
+    },
+    "JSON": {
+      "hard_tabs": false,
+      "format_on_save": "off",
+    },
+    "JSONC": {
+      "hard_tabs": false,
+      "format_on_save": "off",
+    },
+    // NOT NEEDED SHOULD BE THE DEFAULT
+    // "JSONC": {
+    // 	"prettier": {
+    // 		"trailingComma": "all",
+    // 	},
+    // },
+  },
 
-	// -- LSP
-	"lsp": {
-		"rust-analyzer": {
-			"initialization_options": {
-				"rustfmt": {
-					"extraArgs": ["+nightly"],
-				},
-			},
-		},
-		"json-language-server": {
-			"settings": {
-				"json": {
-					"validate": { "enable": true },
-					"format": { "enable": true },
-					"schemas": [
-						{
-							// somehow the code-snippets still show the warng So, not sure.
-							"fileMatch": ["*.jsonc", "*.code-snippets"],
-							"allowTrailingCommas": true,
-						},
-					],
-				},
-			},
-		},
-	},
+  // -- LSP
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+        },
+        "rustfmt": {
+          "extraArgs": ["+nightly"],
+        },
+      },
+    },
+    "json-language-server": {
+      "settings": {
+        "json": {
+          "validate": { "enable": true },
+          "format": { "enable": true },
+          "schemas": [
+            {
+              // somehow the code-snippets still show the warng So, not sure.
+              "fileMatch": ["*.jsonc", "*.code-snippets"],
+              "allowTrailingCommas": true,
+            },
+          ],
+        },
+      },
+    },
+  },
 
-	// -- Git
-	"git": {
-		"inline_blame": {
-			"enabled": false,
-		},
-	},
+  // -- Git
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
 
-	// -- Theme
-	"icon_theme": "Material Icon Theme",
-	// https://zed-themes.com/themes/vscode-dark-modern?name=VSCode%20Dark%20Modern
-	"theme": "VSCode Dark Modern",
+  // -- Theme
+  "icon_theme": "Material Icon Theme",
+  // https://zed-themes.com/themes/vscode-dark-modern?name=VSCode%20Dark%20Modern
+  "theme": "VSCode Dark Modern",
 
-	// UI Font
-	// ui_font_family // let the default be
-	"ui_font_size": 18,
+  // UI Font
+  // ui_font_family // let the default be
+  "ui_font_size": 18,
 
-	// Buffer font
-	// "MesloLGS Nerd Font" "JetBrainsMono Nerd Font" "JetBrainsMonoNL Nerd Font"
-	"buffer_font_family": "MesloLGS Nerd Font",
-	"buffer_font_size": 18,
+  // Buffer font
+  // "MesloLGS Nerd Font" "JetBrainsMono Nerd Font" "JetBrainsMonoNL Nerd Font"
+  "buffer_font_family": "MesloLGS Nerd Font",
+  "buffer_font_size": 18,
 
-	"terminal": {
-		"minimum_contrast": 18.0,
-		"shell": "system",
-		"font_size": 16.0,
-		"font_family": "Source Code Pro",
-	},
-	"theme_overrides": {
-		// "VSCode Dark Modern"
-		"VSCode Dark Modern": {
-			"scrollbar.thumb.background": "#1a1a1a",
-			"tab_bar.background": "#0f0f0f",
-			"tab.active_background": "#202020",
-			"tab.inactive_background": "#030303",
-			"editor.gutter.background": "#000",
-			"editor.background": "#000",
-			"background": "#000",
+  "terminal": {
+    "minimum_contrast": 18.0,
+    "shell": "system",
+    "font_size": 16.0,
+    "font_family": "Source Code Pro",
+  },
+  "theme_overrides": {
+    // "VSCode Dark Modern"
+    "VSCode Dark Modern": {
+      "scrollbar.thumb.background": "#1a1a1a",
+      "tab_bar.background": "#0f0f0f",
+      "tab.active_background": "#202020",
+      "tab.inactive_background": "#030303",
+      "editor.gutter.background": "#000",
+      "editor.background": "#000",
+      "background": "#000",
 
-			// This is the background of the popups/menu
-			// "surface.background": "#ff0000",
-			// "elevated_surface.background": "#ff0000",
+      // This is the background of the popups/menu
+      // "surface.background": "#ff0000",
+      // "elevated_surface.background": "#ff0000",
 
-			// when keyword selected for the other keywords
-			"editor.document_highlight.read_background": "#222222",
+      // when keyword selected for the other keywords
+      "editor.document_highlight.read_background": "#222222",
 
-			// "editor.foreground": "#000",
-			"terminal.background": "#000",
-			"title_bar.background": "#000",
-			"panel.background": "#0a0a0a",
+      // "editor.foreground": "#000",
+      "terminal.background": "#000",
+      "title_bar.background": "#000",
+      "panel.background": "#0a0a0a",
 
-			// line numbers
-			"editor.line_number": "#444",
-			"editor.active_line_number": "#888",
-			"editor.hover_line_number": null,
+      // line numbers
+      "editor.line_number": "#444",
+      "editor.active_line_number": "#888",
+      "editor.hover_line_number": null,
 
-			"players": [
-				// Main player,
-				{
-					"cursor": "#AEAFAD",
-					"background": null,
-					"selection": "#112233",
-				},
-			],
+      "players": [
+        // Main player,
+        {
+          "cursor": "#AEAFAD",
+          "background": null,
+          "selection": "#112233",
+        },
+      ],
 
-			"syntax": {
-				"title": { "color": "#6699ff" },
-				// "variable": { "color": "#ff0000" },
-				"variable.mutable": { "color": "#00ff00" }, // do not work
-				// Note: if comment or comment.doc italic, then a little cursive
-				// "tag": { "color": "#bb55bb" },
-				// "attribute": { "color": "#00ffff" },
-				"keyword": { "color": "#569CD6" },
-			},
+      "syntax": {
+        "title": { "color": "#6699ff" },
+        // "variable": { "color": "#ff0000" },
+        "variable.mutable": { "color": "#00ff00" }, // do not work
+        // Note: if comment or comment.doc italic, then a little cursive
+        // "tag": { "color": "#bb55bb" },
+        // "attribute": { "color": "#00ffff" },
+        "keyword": { "color": "#569CD6" },
+      },
 
-			"editor.active_line.background": "#ffffff00", // disable this selc background line
+      "editor.active_line.background": "#ffffff00", // disable this selc background line
 
-			"text": "#fff",
-			"text.muted": "#ddd",
-			// "created": "#44aa4499", // (ugly on new file)
-			// "modified": "#6699ff",
-			"ignored": "#656565", // for the git ingore file name in the file explorer
-			"deleted": "#ff0000",
-			"hidden": "#999",
-			"error": "#ff0000",
+      "text": "#fff",
+      "text.muted": "#ddd",
+      // "created": "#44aa4499", // (ugly on new file)
+      // "modified": "#6699ff",
+      "ignored": "#656565", // for the git ingore file name in the file explorer
+      "deleted": "#ff0000",
+      "hidden": "#999",
+      "error": "#ff0000",
 
-			"hint": "#ffffff6f",
-			// "hint.background": "#0000ff", // seems to not have any effect
-			// "hint.border": "#00ff00"      // seems to not have any effect
-		},
-	},
+      "hint": "#ffffff6f",
+      // "hint.background": "#0000ff", // seems to not have any effect
+      // "hint.border": "#00ff00"      // seems to not have any effect
+    },
+  },
 
-	// -- Other
-	"ssh_connections": [
-		{
-			"host": "b",
-			"args": [],
-			"projects": [],
-		},
-	],
+  // -- Other
+  "ssh_connections": [
+    {
+      "host": "b",
+      "args": [],
+      "projects": [],
+    },
+  ],
 }
