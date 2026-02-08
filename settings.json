@@ -35,11 +35,12 @@
 	},
 
 	// -- Completion
-	"disable_ai": false,
+	"disable_ai": true,
 	"show_completions_on_input": false,
 	"show_edit_predictions": true,
 	"edit_predictions": {
-		"mode": "subtle",
+		"provider": "copilot",
+    "mode": "subtle",
 		// "disabled_globs": ["**/*.md"]
 	},
 	"agent": {
