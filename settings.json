@@ -34,7 +34,7 @@
     // "experimental.show": false,
   },
 
-  // -- Completion
+  // -- AI  / Completion
   "disable_ai": true,
   "show_completions_on_input": false,
   "show_edit_predictions": true,
@@ -66,6 +66,11 @@
     "enabled": false,
   },
   "inline_code_actions": false,
+
+  // For js/ts ad perhaps more
+  "prettier": {
+    "printWidth": 120
+  },
 
   // -- Files
   "file_types": {
@@ -169,12 +174,12 @@
 
   // UI Font
   // ui_font_family // let the default be
-  "ui_font_size": 18,
+  "ui_font_size": 24,
 
   // Buffer font
   // "MesloLGS Nerd Font" "JetBrainsMono Nerd Font" "JetBrainsMonoNL Nerd Font"
   "buffer_font_family": "MesloLGS Nerd Font",
-  "buffer_font_size": 18,
+  "buffer_font_size": 24,
 
   "terminal": {
     "minimum_contrast": 18.0,
