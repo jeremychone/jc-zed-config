@@ -174,12 +174,12 @@
 
   // UI Font
   // ui_font_family // let the default be
-  "ui_font_size": 24,
+  "ui_font_size": 18,
 
   // Buffer font
   // "MesloLGS Nerd Font" "JetBrainsMono Nerd Font" "JetBrainsMonoNL Nerd Font"
   "buffer_font_family": "MesloLGS Nerd Font",
-  "buffer_font_size": 24,
+  "buffer_font_size": 18,
 
   "terminal": {
     "minimum_contrast": 18.0,
