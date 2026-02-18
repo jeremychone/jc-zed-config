@@ -78,7 +78,7 @@
 			],
 		},
 	},
-	// Start dev term (default, below)
+	// Start dev term (bottom term aline with bottom zed)
 	{
 		"bindings": {
 			"ctrl-cmd-shift-j": [
@@ -103,13 +103,23 @@
 		},
 	},
 	// TOGGLE AI
-	// API Run
 	{
 		"bindings": {
 			"ctrl-cmd-a": [
 				"task::Spawn",
 				{
 					"task_name": "Toggle AI",
+				},
+			],
+		},
+	},
+	// Save Image to File
+	{
+		"bindings": {
+			"ctrl-cmd-v": [
+				"task::Spawn",
+				{
+					"task_name": "Save Clipboard to Image",
 				},
 			],
 		},
