@@ -124,6 +124,19 @@
 			],
 		},
 	},
+	// {
+	// 	"context": "Editor",
+	// 	"bindings": {
+	// 		"ctrl-cmd-v": [
+	// 			"action::Sequence",
+	// 			[
+	// 			["task::Spawn", {"task_name": "Save Clipboard to Image"}],
+	//      // almost work, but the clipboard was not updated yet with the markdown text from the task. would need to wait somehow
+	// 			["workspace::SendKeystrokes", "cmd-v"]
+	// 			],
+	// 		],
+	// 	},
+	// },
 
 	// -- Surround
 	// <>
