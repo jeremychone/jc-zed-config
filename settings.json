@@ -98,6 +98,15 @@
       "show_edit_predictions": true,
       "use_on_type_format": false, // otherwise, change prev line on enter
     },
+    "TypeScript": {
+      "show_edit_predictions": true,
+      "hard_tabs": true,
+      "format_on_save": "off",
+    },
+    "CSS": {
+      "show_edit_predictions": true,
+      "format_on_save": "off",
+    },
     "Markdown": {
       "auto_indent": false,
       "show_edit_predictions": false,
@@ -133,6 +142,21 @@
 
   // -- LSP
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "never"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "never"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
