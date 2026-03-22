@@ -58,6 +58,7 @@
   "hover_popover_delay": 2000, // will have no effect since above
 
   // -- Editor
+  "use_auto_surround": false,
   "inlay_hints": {
     "show_type_hints": true,
     "enabled": false,
@@ -198,12 +199,12 @@
 
   // UI Font
   // ui_font_family // let the default be
-  "ui_font_size": 24,
+  "ui_font_size": 18,
 
   // Buffer font
   // "MesloLGS Nerd Font" "JetBrainsMono Nerd Font" "JetBrainsMonoNL Nerd Font"
   "buffer_font_family": "MesloLGS Nerd Font",
-  "buffer_font_size": 24,
+  "buffer_font_size": 18,
 
   "terminal": {
     "minimum_contrast": 18.0,
