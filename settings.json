@@ -8,6 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   // -- Bars
+  "rounded_selection": true,
   "project_panel": {
     "auto_fold_dirs": false,
     "hide_root": false,
@@ -58,7 +59,6 @@
   "hover_popover_delay": 2000, // will have no effect since above
 
   // -- Editor
-  "use_auto_surround": false,
   "inlay_hints": {
     "show_type_hints": true,
     "enabled": false,
