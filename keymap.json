@@ -224,4 +224,9 @@
 			"alt-r": "editor::ReloadFile",
 		},
 	},
+ {
+  "bindings": {
+   "ctrl-cmd-0": "outline_panel::CollapseAllEntries"
+  }
+ }
 ]

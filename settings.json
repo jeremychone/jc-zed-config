@@ -8,8 +8,18 @@
 // from the command palette or from `Zed` application menu.
 {
   // -- Bars
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "rounded_selection": true,
   "project_panel": {
+    "dock": "left",
     "auto_fold_dirs": false,
     "hide_root": false,
   },
@@ -45,6 +55,7 @@
     // "disabled_globs": ["**/*.md"]
   },
   "agent": {
+    "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini",
