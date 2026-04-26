@@ -277,7 +277,7 @@
       // "created": "#44aa4499", // (ugly on new file)
       // "modified": "#6699ff",
       "ignored": "#656565", // for the git ingore file name in the file explorer
-      "deleted": "#ff6666",
+      "deleted": "#FF99FC",
       "hidden": "#999",
       "error": "#ff0000",
 
