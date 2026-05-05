@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  // -- Cli
+  "cli_default_open_behavior": "new_window",
+
   // -- Bars
   "outline_panel": {
     "dock": "left"
@@ -93,6 +96,7 @@
     //
     ".aipack/*",
     ".notes/*",
+    "_workbench/z-archive/**/*",
   ],
 
   // -- Editor Content
@@ -143,6 +147,9 @@
     "JSONC": {
       "hard_tabs": false,
       "format_on_save": "off",
+    },
+    "Ruby": {
+      "language_servers": ["!solargraph", "..."]
     },
     // NOT NEEDED SHOULD BE THE DEFAULT
     // "JSONC": {
