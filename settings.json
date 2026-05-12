@@ -123,6 +123,10 @@
       "show_edit_predictions": true,
       "format_on_save": "off",
     },
+    "XML": {
+      "show_edit_predictions": true,
+      "format_on_save": "off",
+    },
     "Markdown": {
       "auto_indent": "none",
       "show_edit_predictions": false,
