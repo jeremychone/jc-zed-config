@@ -97,10 +97,10 @@
     ".notes/*",
   ],
   "file_scan_exclusions": [
-    //
-    ".aipack/**/*",
-    "_workbench/z-archive/**/*",
-    ".workbench/z-archive/**/*"
+    // If not scanned, it does not change when udpated.
+    // ".aipack/**/*",
+    // "_workbench/z-archive/**/*",
+    // ".workbench/z-archive/**/*"
   ],
 
   // -- Editor Content
