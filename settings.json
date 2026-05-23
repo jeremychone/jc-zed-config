@@ -94,9 +94,13 @@
   },
   "file_scan_inclusions": [
     //
-    ".aipack/*",
     ".notes/*",
+  ],
+  "file_scan_exclusions": [
+    //
+    ".aipack/**/*",
     "_workbench/z-archive/**/*",
+    ".workbench/z-archive/**/*"
   ],
 
   // -- Editor Content
