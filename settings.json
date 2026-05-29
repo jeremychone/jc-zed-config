@@ -96,13 +96,6 @@
     //
     ".notes/*",
   ],
-  "file_scan_exclusions": [
-    // If not scanned, it does not change when udpated.
-    // ".aipack/**/*",
-    // "_workbench/z-archive/**/*",
-    // ".workbench/z-archive/**/*"
-  ],
-
   // -- Editor Content
   "tab_size": 2,
   "hard_tabs": true,
