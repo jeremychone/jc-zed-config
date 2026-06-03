@@ -11,14 +11,14 @@
     "description": "tracing debug"
   },
 
-  "10x-comment-section": {
-    "prefix": "10x-comment-section",
+  "10x-comment-region": {
+    "prefix": "10x-comment-region",
     "body": [
-      "// region:    --- ${1:Section}",
+      "// region:    --- ${1:region}",
       "${2}",
-      "// endregion: --- ${1:Section}"
+      "// endregion: --- ${1:region}"
     ],
-    "description": "Comment Section"
+    "description": "Comment region"
   },
 
   "10x-immediate-closure": {
