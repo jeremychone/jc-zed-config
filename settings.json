@@ -149,9 +149,9 @@
       "hard_tabs": false,
       "format_on_save": "off",
     },
-    "Ruby": {
-      "language_servers": ["!solargraph", "..."]
-    },
+    // "Ruby": {
+    //   "language_servers": ["!solargraph", "..."]
+    // },
     // NOT NEEDED SHOULD BE THE DEFAULT
     // "JSONC": {
     // 	"prettier": {

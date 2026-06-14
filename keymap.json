@@ -69,7 +69,7 @@
 	// Start dev term (default, below)
 	{
 		"bindings": {
-			"ctrl-cmd-j": [
+			"ctrl-cmd-shift-j": [
 				"task::Spawn",
 				{
 					"task_name": "Dev Term Below",
@@ -81,7 +81,7 @@
 	// Start dev term (bottom term aline with bottom zed)
 	{
 		"bindings": {
-			"ctrl-cmd-shift-j": [
+			"ctrl-alt-cmd-shift-j": [
 				"task::Spawn",
 				{
 					"task_name": "Dev Term Bottom",
