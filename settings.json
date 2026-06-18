@@ -116,6 +116,9 @@
       "hard_tabs": true,
       "format_on_save": "off",
     },
+    "HTML": {
+      "format_on_save": "off",
+    },
     "CSS": {
       "show_edit_predictions": true,
       "format_on_save": "off",
