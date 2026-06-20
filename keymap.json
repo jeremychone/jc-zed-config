@@ -65,31 +65,6 @@
 		},
 	},
 
-	// -- Tasks
-	// Start dev term (default, below)
-	{
-		"bindings": {
-			"ctrl-cmd-shift-j": [
-				"task::Spawn",
-				{
-					"task_name": "Dev Term Below",
-					// "reveal_target": "center",
-				},
-			],
-		},
-	},
-	// Start dev term (bottom term aline with bottom zed)
-	{
-		"bindings": {
-			"ctrl-alt-cmd-shift-j": [
-				"task::Spawn",
-				{
-					"task_name": "Dev Term Bottom",
-					// "reveal_target": "center",
-				},
-			],
-		},
-	},
 	// API Run
 	{
 		"bindings": {
@@ -102,6 +77,7 @@
 			],
 		},
 	},
+
 	// TOGGLE AI
 	{
 		"bindings": {

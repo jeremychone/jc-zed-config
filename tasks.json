@@ -1,41 +1,15 @@
 // Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
 //
 [
-	// -- JC Zed Tasks
-	// Dev Term (below, default)
+ 	// Toggle profile
 	{
-		"label": "Dev Term Below",
+		"label": "Toggle Profile",
 		"command": "jc-zed-tasks",
-		"args": [
-			"new-dev-term",
-			"--pos",
-			"below",
-			"--reposition",
-			"--cwd",
-			"'$ZED_WORKTREE_ROOT'",
-			"--with-tmux",
-			"--show-if-present",
-		],
+		"args": ["toggle-profile"],
 		"reveal": "never",
-		// "hide": "on_success",
+		"hide": "on_success",
 	},
-	// Dev Term (bottom) (inside the Zed)
-	{
-		"label": "Dev Term Bottom",
-		"command": "jc-zed-tasks",
-		"args": [
-			"new-dev-term",
-			"--pos",
-			"bottom",
-			"--reposition",
-			"--cwd",
-			"'$ZED_WORKTREE_ROOT'",
-			"--with-tmux",
-			"--show-if-present",
-		],
-		"reveal": "never",
-		// "hide": "on_success",
-	},
+
 	// AIP RUN first found
 	{
 		"label": "AIP RUN",
@@ -44,6 +18,7 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
+
 	// AIP Run pro@coder
 	{
 		"label": "pro@coder",
@@ -58,6 +33,7 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
+
 	// TOGGLE AI
 	{
 		"label": "Toggle AI",
@@ -66,6 +42,7 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
+
 	// MD TO HTML
 	{
 		"label": "MD to HTML",
@@ -74,6 +51,7 @@
 		"reveal": "never",
 		"hide": "on_success",
 	},
+
 	// Save clipboard to image
 	{
 		"label": "Save Clipboard to Image",
@@ -84,14 +62,6 @@
 			"'$ZED_DIRNAME'",
 			"--copy-md-ref",
 		],
-		"reveal": "never",
-		"hide": "on_success",
-	},
-	// Toggle profile
-	{
-		"label": "Toggle Profile",
-		"command": "jc-zed-tasks",
-		"args": ["toggle-profile"],
 		"reveal": "never",
 		"hide": "on_success",
 	},
