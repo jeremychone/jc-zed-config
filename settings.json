@@ -106,6 +106,7 @@
   "languages": {
     "Rust": {
       "extend_comment_on_newline": false,
+       "document_folding_ranges": "on",
     },
     "Lua": {
       "show_edit_predictions": true,
