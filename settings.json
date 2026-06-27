@@ -165,6 +165,9 @@
   },
 
   // -- LSP
+  // for all LSP supported languages, use lsp folding ranges
+  "document_folding_ranges": "on",
+
   "lsp": {
     "vtsls": {
       "settings": {
