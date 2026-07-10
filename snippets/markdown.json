@@ -1,0 +1,13 @@
+{
+  "aip-frame-chat-only": {
+    "prefix": "aip-frame-chat-only",
+    "body": [
+      "Do not write any code files, update chat.md",
+      "",
+      "$1",
+      "",
+      "In chat.md, capture ask, and give answer"
+    ],
+    "description": "Frame chat-only responses in chat.md"
+  }
+}
