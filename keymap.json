@@ -200,9 +200,40 @@
 			"alt-r": "editor::ReloadFile",
 		},
 	},
+	{
+		"context": "OutlinePanel",
+		"bindings": {
+			"ctrl-cmd-0": "outline_panel::CollapseAllEntries"
+		}
+	},
+	{
+		"context": "ProjectPanel",
+		"bindings": {
+			"ctrl-cmd-0": "project_panel::CollapseAllEntries"
+		}
+	},
  {
+  "context": "ProjectSearchView",
   "bindings": {
-   "ctrl-cmd-0": "outline_panel::CollapseAllEntries"
+   "ctrl-cmd-0": "project_search::ToggleAllSearchResults"
+  }
+ },
+ {
+  "context": "ProjectSearchView",
+  "unbind": {
+   "cmd-shift-enter": "project_search::ToggleAllSearchResults"
+  }
+ },
+ {
+  "context": "ProjectSearchBar",
+  "bindings": {
+   "ctrl-cmd-0": "project_search::ToggleAllSearchResults"
+  }
+ },
+ {
+  "context": "ProjectSearchBar",
+  "unbind": {
+   "cmd-shift-enter": "project_search::ToggleAllSearchResults"
   }
  }
 ]
