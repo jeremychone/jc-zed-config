@@ -31,6 +31,11 @@
     "body": ["Result<${1}>"]
   },
 
+  "10x-box-result": {
+    "prefix": "10x-box-result",
+    "body": ["core::result::Result<(), Box<dyn std::error::Error>>"]
+  },
+
   // -- JC ZED XP
   "jc_format": {
     "prefix": "jc_format",
