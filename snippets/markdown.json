@@ -9,5 +9,18 @@
       "In chat.md, capture ask, and give answer"
     ],
     "description": "Frame chat-only responses in chat.md"
+  },
+
+  "aip-frame-go-goal": {
+    "prefix": "aip-frame-go-goal",
+    "body": [
+      "Now that all is clear in goal.md",
+      "",
+      "- create a plan.md",
+      "- implement step one by one",
+      "$1",
+      "In chat.md, keep notes, progress, and ask/answer questions as they arise"
+    ],
+    "description": "Frame chat-only responses in chat.md"
   }
 }
