@@ -11,6 +11,20 @@
     "description": "Frame chat-only responses in chat.md"
   },
 
+  "aip-frame-chat-to-loop": {
+    "prefix": "aip-frame-chat-to-loop",
+    "body": [
+      "Now that all is clear in chat.md",
+      "",
+      "- Create the goal.md and move chat.md to data/previous-chat-01.md",
+      "- Then, create a plan.md",
+      "- Then, implement the plan.md steps one by one",
+      "",
+      "In chat.md, keep notes, progress, and ask/answer questions as they arise"
+    ],
+    "description": "Frame chat-only responses in chat.md"
+  },
+
   "aip-frame-go-goal": {
     "prefix": "aip-frame-go-goal",
     "body": [
