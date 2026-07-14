@@ -92,7 +92,7 @@
 	// Save Image to File
 	{
 		"bindings": {
-			"ctrl-cmd-v": [
+			"alt-cmd-v": [
 				"task::Spawn",
 				{
 					"task_name": "Save Clipboard to Image",

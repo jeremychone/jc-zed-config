@@ -61,6 +61,7 @@
 			"--dir",
 			"'$ZED_DIRNAME'",
 			"--copy-md-ref",
+			"--workbench-data"
 		],
 		"reveal": "never",
 		"hide": "on_success",
