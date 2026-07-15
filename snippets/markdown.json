@@ -11,8 +11,34 @@
     "description": "Frame chat-only responses in chat.md"
   },
 
-  "aip-frame-chat-to-loop": {
-    "prefix": "aip-frame-chat-to-loop",
+  "aip-frame-chat-to-prep-loop": {
+    "prefix": "aip-frame-chat-to-prep-loop",
+    "body": [
+      "Now that everything is clear in chat.md",
+      "",
+      "- Extract all the tasks that need to be completed from chat.md into goal.md",
+      "",
+      "- Create a clear plan.md from goal.md",
+      "",
+      "- Move chat.md to data/previous-01-chat.md",
+      "",
+      "In chat.md, capture the request and provide summary of work"
+    ],
+    "description": "Frame chat-only responses in chat.md"
+  },
+
+  "aip-frame-plan-do-next": {
+    "prefix": "aip-frame-plan-do-next",
+    "body": [
+      "Following plan.md, implement the next step",
+      "",
+      "In chat.md, add a summary of the work."
+    ],
+    "description": "Frame chat-only responses in chat.md"
+  },
+
+  "aip-frame-loop-exec-from-chat": {
+    "prefix": "aip-frame-loop-exec-from-chat",
     "body": [
       "Now that all is clear in chat.md",
       "",
@@ -25,8 +51,8 @@
     "description": "Frame chat-only responses in chat.md"
   },
 
-  "aip-frame-go-goal": {
-    "prefix": "aip-frame-go-goal",
+  "aip-frame-loop-exec-from-goal": {
+    "prefix": "aip-frame-loop-exec-from-goal",
     "body": [
       "Now that all is clear in goal.md",
       "",
