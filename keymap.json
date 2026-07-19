@@ -100,6 +100,17 @@
 			],
 		},
 	},
+	// Save Image to File
+	{
+		"bindings": {
+			"ctrl-cmd-h": [
+				"task::Spawn",
+				{
+					"task_name": "MD to HTML",
+				},
+			],
+		},
+	},
 	// {
 	// 	"context": "Editor",
 	// 	"bindings": {
@@ -138,7 +149,7 @@
 		},
 	},
 
-	// -- JC Custom Pante
+	// -- JC Custom Pane
 	{
 		"bindings": {
 			"ctrl-cmd-right": "pane::SplitAndMoveRight",
