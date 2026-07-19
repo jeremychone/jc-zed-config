@@ -49,7 +49,7 @@
 		"command": "jc-zed-tasks",
 		"args": ["md-to-html", "--file", "'$ZED_FILE'"],
 		"reveal": "never",
-		"hide": "on_success",
+		// "hide": "on_success",
 	},
 
 	// Save clipboard to image
