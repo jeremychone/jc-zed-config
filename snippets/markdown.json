@@ -63,5 +63,23 @@
       "In chat.md, keep notes, progress, and ask/answer questions as they arise"
     ],
     "description": "Frame chat-only responses in chat.md"
-  }
+  },
+
+"aip-frame-pr-review": {
+  "prefix": "aip-frame-pr-review",
+  "body": [
+    "Do not update code files, update chat.md",
+    "",
+    "Review PR $1 and tell me:",
+    "",
+    "- Whether the code quality is good",
+    "- Whether it affects the public API",
+    "- Whether it has any behavioral side effects and whether it is safe",
+    "",
+    "In short, tell me whether this PR is safe to merge.",
+    "",
+    "In chat.md, capture the request and provide your answer."
+  ],
+  "description": "Frame chat-only responses in chat.md"
+}
 }
