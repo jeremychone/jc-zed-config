@@ -32,7 +32,7 @@
     "body": [
       "Following plan.md, implement the next step",
       "",
-      "In chat.md, add a summary of the work."
+      "In chat.md, keep track of notes, progress, and ask or answer questions if any."
     ],
     "description": "Frame chat-only responses in chat.md"
   },

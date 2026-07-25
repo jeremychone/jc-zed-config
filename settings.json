@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   // -- Cli
-  "cli_default_open_behavior": "new_window",
+  "cli_default_open_behavior": "existing_window",
 
   // -- Bars
   "outline_panel": {
