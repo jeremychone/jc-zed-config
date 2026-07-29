@@ -43,9 +43,9 @@
       "Now that all is clear in chat.md",
       "",
       "- Extract the final goal and everything needed to implement it from chat.md into goal.md.",
-      "- move chat.md to data/previous-chat-01.md",
+      "- Move chat.md to data/previous-chat-01.md",
       "- Then, create a plan.md",
-      "- Then, implement the plan.md steps one by one",
+      "- Then implement step one by one following the plan-rules",
       "",
       "In chat.md, keep notes, progress, and ask/answer questions as they arise"
     ],
@@ -57,8 +57,8 @@
     "body": [
       "Now that all is clear in goal.md",
       "",
-      "- create a plan.md",
-      "- implement step one by one",
+      "- Create a plan.md",
+      "- Then implement step one by one following the plan-rules",
       "$1",
       "In chat.md, keep notes, progress, and ask/answer questions as they arise"
     ],
