@@ -16,7 +16,7 @@
     "body": [
       "Now that everything is clear in chat.md",
       "",
-      "- Extract the final goal and everything needed to implement it from chat.md into goal.md.",
+      "- Extract the final goal, latest decisions, and all implementation requirements from chat.md into goal.md.",
       "",
       "- Create a clear plan.md from goal.md",
       "",
@@ -42,7 +42,7 @@
     "body": [
       "Now that all is clear in chat.md",
       "",
-      "- Extract the final goal and everything needed to implement it from chat.md into goal.md.",
+      "- Extract the final goal, latest decisions, and all implementation requirements from chat.md into goal.md.",
       "- Move chat.md to data/previous-chat-01.md",
       "- Then, create a plan.md",
       "- Then implement step one by one following the plan-rules",
