@@ -6,7 +6,7 @@
       "",
       "$1",
       "",
-      "In chat.md, capture ask, and give answer"
+      "In chat.md, capture this request, and give answer"
     ],
     "description": "Frame chat-only responses in chat.md"
   },
