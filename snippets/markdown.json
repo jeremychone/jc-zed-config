@@ -1,4 +1,13 @@
 {
+  "aip-footer-chat": {
+    "prefix": "aip-footer-chat",
+    "body": [
+      "$1",
+      "",
+      "in chat.md, capture request, and give summary/rational of work done",
+    ],
+
+  },
   "aip-frame-chat-only": {
     "prefix": "aip-frame-chat-only",
     "body": [
