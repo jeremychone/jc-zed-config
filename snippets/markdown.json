@@ -1,6 +1,6 @@
 {
-  "aip-footer-chat": {
-    "prefix": "aip-footer-chat",
+  "aip-frame-footer-chat": {
+    "prefix": "aip-frame-footer-chat",
     "body": [
       "$1",
       "",
@@ -66,6 +66,7 @@
     "body": [
       "Now that all is clear in goal.md",
       "",
+      "- move chat.md to data/archive-01-chat.md",
       "- Create a plan.md",
       "- Then implement step one by one following the plan-rules",
       "$1",
