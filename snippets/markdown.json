@@ -4,7 +4,7 @@
     "body": [
       "$1",
       "",
-      "in chat.md, capture request, and give summary/rational of work done",
+      "in chat.md, fully capture this request, and give summary/rational of work done",
     ],
 
   },
@@ -15,7 +15,7 @@
       "",
       "$1",
       "",
-      "In chat.md, capture this request, and give answer"
+      "In chat.md, fully capture this request, and give answer"
     ],
     "description": "Frame chat-only responses in chat.md"
   },
@@ -88,7 +88,7 @@
     "",
     "In short, tell me whether this PR is safe to merge.",
     "",
-    "In chat.md, capture the request and provide your answer."
+    "In chat.md, capture this request and provide your answer."
   ],
   "description": "Frame chat-only responses in chat.md"
 }
