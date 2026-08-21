@@ -36,6 +36,17 @@
     "body": ["core::result::Result<(), Box<dyn std::error::Error>>"]
   },
 
+  "10x-try-map-closure": {
+    "prefix": "10x-try-map-closure",
+    "body": [
+      "(|| -> core::result::Result<_, _> {",
+      "\t$1",
+      "})()",
+      ".map_err(${2:|e| })$0"
+    ],
+    "description": "Wrap code in a Result closure and map the error"
+  },
+
   // -- JC ZED XP
   "jc_format": {
     "prefix": "jc_format",

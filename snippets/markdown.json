@@ -6,7 +6,14 @@
       "",
       "in chat.md, fully capture this request, and give summary/rational of work done",
     ],
-
+  },
+  "aip-frame-footer-loop": {
+    "prefix": "aip-frame-footer-loop",
+    "body": [
+      "$1",
+      "",
+      "In chat.md, keep track of progress and ask/answer questions as they arise.",
+    ],
   },
   "aip-frame-chat-only": {
     "prefix": "aip-frame-chat-only",
