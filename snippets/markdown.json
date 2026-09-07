@@ -93,7 +93,12 @@
     "- Whether it affects the public API",
     "- Whether it has any behavioral side effects and whether it is safe",
     "",
-    "In short, tell me whether this PR is safe to merge.",
+    "Also, code MUST NOT have panic or unsafe:",
+    "- no `unwrap()` or `expect(..)` or anything that can panic in the production code path (it is tolerated in tests/examples for now)",
+    "- no unsafe block",
+    "Report them in a `## Unsafe` section if any",
+    "",
+    "`unwrap()` or `expect(...)` are tolerated in tests code for now (but still report them)",
     "",
     "In chat.md, capture this request and provide your answer."
   ],
