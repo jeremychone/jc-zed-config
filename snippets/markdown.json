@@ -97,8 +97,9 @@
     "- no `unwrap()` or `expect(..)` or anything that can panic in the production code path (it is tolerated in tests/examples for now)",
     "- no unsafe block",
     "Report them in a `## Unsafe` section if any",
-    "",
     "`unwrap()` or `expect(...)` are tolerated in tests code for now (but still report them)",
+    "",
+    "As a `## Conclusion`, tell if safe to merge or else",
     "",
     "In chat.md, capture this request and provide your answer."
   ],
