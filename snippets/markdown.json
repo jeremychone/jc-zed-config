@@ -1,19 +1,11 @@
 {
   "aip-frame-footer-chat": {
     "prefix": "aip-frame-footer-chat",
-    "body": [
-      "$1",
-      "",
-      "in chat.md, fully capture this request, and give summary/rational of work done",
-    ],
+    "body": ["$1", "", "in chat.md, fully capture this request, and give summary/rational of work done"]
   },
   "aip-frame-footer-loop": {
     "prefix": "aip-frame-footer-loop",
-    "body": [
-      "$1",
-      "",
-      "In chat.md, keep track of progress and ask/answer questions as they arise.",
-    ],
+    "body": ["$1", "", "In chat.md, keep track of progress and ask/answer questions as they arise."]
   },
   "aip-frame-chat-only": {
     "prefix": "aip-frame-chat-only",
@@ -46,7 +38,7 @@
   "aip-frame-plan-do-next": {
     "prefix": "aip-frame-plan-do-next",
     "body": [
-      "Following plan.md, implement the next step",
+      "Following plan.md, implement the next step.",
       "",
       "In chat.md, keep track of notes, progress, and ask or answer questions if any."
     ],
@@ -82,27 +74,41 @@
     "description": "Frame chat-only responses in chat.md"
   },
 
-"aip-frame-pr-review": {
-  "prefix": "aip-frame-pr-review",
-  "body": [
-    "Do not update code files, update chat.md",
-    "",
-    "Review PR $1 and tell me:",
-    "",
-    "- Whether the code quality is good",
-    "- Whether it affects the public API",
-    "- Whether it has any behavioral side effects and whether it is safe",
-    "",
-    "Also, code MUST NOT have panic or unsafe:",
-    "- no `unwrap()` or `expect(..)` or anything that can panic in the production code path (it is tolerated in tests/examples for now)",
-    "- no unsafe block",
-    "Report them in a `## Unsafe` section if any",
-    "`unwrap()` or `expect(...)` are tolerated in tests code for now (but still report them)",
-    "",
-    "As a `## Conclusion`, tell if safe to merge or else",
-    "",
-    "In chat.md, capture this request and provide your answer."
-  ],
-  "description": "Frame chat-only responses in chat.md"
-}
+  "aip-frame-loop-exec-from-plan": {
+    "prefix": "aip-frame-loop-exec-from-plan",
+    "body": [
+      "Now that all is clear in goal.md and plan.md",
+      "",
+      "- move chat.md to data/archive-01-chat.md",
+      "- Then implement step one by one following the plan-rules",
+      "$1",
+      "In chat.md, keep notes, progress, and ask/answer questions as they arise"
+    ],
+    "description": "Frame chat-only responses in chat.md"
+  },
+
+
+  "aip-frame-pr-review": {
+    "prefix": "aip-frame-pr-review",
+    "body": [
+      "Do not update code files, update chat.md",
+      "",
+      "Review PR $1 and tell me:",
+      "",
+      "- Whether the code quality is good",
+      "- Whether it affects the public API",
+      "- Whether it has any behavioral side effects and whether it is safe",
+      "",
+      "Also, code MUST NOT have panic or unsafe:",
+      "- no `unwrap()` or `expect(..)` or anything that can panic in the production code path (it is tolerated in tests/examples for now)",
+      "- no unsafe block",
+      "Report them in a `## Unsafe` section if any",
+      "`unwrap()` or `expect(...)` are tolerated in tests code for now (but still report them)",
+      "",
+      "As a `## Conclusion`, tell if safe to merge or else",
+      "",
+      "In chat.md, capture this request and provide your answer."
+    ],
+    "description": "Frame chat-only responses in chat.md"
+  }
 }
