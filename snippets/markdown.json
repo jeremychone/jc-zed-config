@@ -89,7 +89,7 @@
 
   "aip-frame-pr-review": {
     "prefix": "aip-frame-pr-review",
-    "body": [
+    "body":[
       "Do not update code files, update chat.md",
       "",
       "Review PR $1 and tell me:",
@@ -98,13 +98,17 @@
       "- Whether it affects the public API",
       "- Whether it has any behavioral side effects and whether it is safe",
       "",
-      "Also, code MUST be panic safe and no unsafe,or unsafe:",
-      "- no `unwrap()` or `expect(..)` or anything that create a panic at runtime",
-      "- no unsafe block",
-      "Report them in a `## Panic Safe and No Unsafe` section if any",
+      "Also, the patch provided code MUST be panic safe:",
+      "- Should not use `unwrap()` or `expect(..)` in production code",
+      "- Or anything that create a panic at runtime (like [])",
+      "",
+      "Report them in a `## Panic Safety OK` (or `NOT-OK`) section if the patch contains those",
+      "",
+      "Report in `## Panic Safety in existing code` if existing code had some of those issue",
+      "",
       "NOTE: `unwrap()` or `expect(...)` are tolerated in tests code for now (but still report them)",
       "",
-      "As a `## Conclusion`, tell if safe to merge or else",
+      "As a `## Conclusion`, tell if safe to merge or else. Be concise, complete, and bullet point centric.",
       "",
       "In chat.md, capture this request and provide your answer."
     ],
