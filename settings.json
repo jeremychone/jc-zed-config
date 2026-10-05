@@ -8,6 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
   // -- Cli
+  "which_key": {
+    "delay_ms": 5000
+  },
   "cli_default_open_behavior": "existing_window",
 
   // -- Bars
@@ -22,6 +25,9 @@
   },
   "rounded_selection": true,
   "project_panel": {
+    "title_tooltip_delay": {
+      "custom": 2000
+    },
     "dock": "left",
     "auto_fold_dirs": false,
     "hide_root": false,
